@@ -1,15 +1,24 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import Pessoa from './components/Pessoa';
+import SayMyName from './components/SayMyName';
+import Frase from './components/Frase';
 
 function App() {
-  const name = 'lucas';
-  const newname = name.toUpperCase();
-  const url = 'https://via.placeholder.com/150';
+
+  const nome = 'Maria';
   return (
     <div className="App">
-      <h1>Olá, {newname} !</h1>
-      <img src={url} alt="Minha Imagem" />
-      <HelloWorld />
+      <Frase />
+      <SayMyName nome="Lucas" />
+      <SayMyName nome="João" />
+      <Frase />
+      <SayMyName nome={nome} />
+      <Frase />
+      <Pessoa
+        nome="Sebastian"
+        idade="300"
+        profissao="Desenhista"
+        foto="https://via.placeholder.com/150" />
     </div>
   );
 }
