@@ -1,0 +1,91 @@
+# Exercícios de ambientação
+
+Não há gabarito neste arquivo. Responda com suas palavras; o objetivo é calibrar a trilha, não obter uma nota.
+
+## 1. Seu ponto de partida
+
+1. Você já criou alguma página, script ou aplicação? Descreva o que conseguiu fazer.
+   Sim eu já criei uma lading page statica, utilizando flex, CSS, responsividade, adicionei imagens, configurei no HTML links para fora da lading page e tudo mais, já utilizei ul,li, justify-content, display, mas não conheço sobre JS, tailwind e tudo mais.
+2. Quais destes termos você reconhece e consegue explicar: HTML, CSS, JavaScript, terminal, Git, Node.js, npm, API e banco de dados?
+   HTML: Linguagem de Marcação de hiper texto (links, texto puro sem estilização).
+   CSS: Estilização de uma pagina cores, posições, onde tudo deve ficar e como de aparecer.
+   JS: Apenas como a animação de uma pagina.
+   Terminal: Linha de comando (bruto) sem interface para usuário, foi a primeira forma de digitação de código criada.
+   GIT: Utilizado para versionamento e controle de código.
+   Node.js: Framework utilizado com REACT para conectar ao banco de dados do projeto.
+   npm: Comando para baixar pacotes de dados disponibilizado pela comunidade.
+   API: Estrutura de código que pode ser re-utilizada durante o projeto mais de uma vez.
+   BD: Onde as informações são inseridas, atualizadas ou excluidas. Ele é o que gerencia a base de dados de um projeto.
+3. Qual resultado gostaria de alcançar primeiro?
+   Como eu já tenho um breve conhecimento sobre HTML e CSS quero compreender o JS para que eu consiga avançar e que eu consiga criar projetos em REACT para conseguir uma vaga de emprego como programador ou ser freelancer
+4. Quantos dias por semana e quanto tempo por sessão você consegue estudar de forma realista?
+   A noite após as 19:30 até as 22:30 é o que eu pretendo dedicar, um total de 3H por dia.
+5. Você aprende melhor lendo, vendo uma demonstração, desenhando, explicando em voz alta ou praticando?
+   Vendo e praticando dessa forma eu consigo aplicar o conceito do que eu vi de forma clara e eficiente em projetos similares.
+
+## 2. Arquivos e caminhos
+
+Observe o caminho abaixo sem executar nenhum comando:
+
+```text
+C:\Users\lucas\OneDrive\Documentos\estudando_react\learning\roadmap.md
+```
+
+Explique:
+
+1. Qual parte parece ser o nome do arquivo?
+   **Minha resposta:** roadmap.md
+2. Qual é sua extensão?
+   **Minha resposta:** .md
+3. Qual pasta contém diretamente esse arquivo?
+   **Minha resposta:** learning
+4. Como você descreveria a diferença entre esse caminho completo e `learning\roadmap.md`?
+   **Minha resposta:** O caminho mostra onde realmente está localizado a pasta e o arquivo, a descrição da pergunta mostra somente a pasta e o arquivo sem mostrar corretamente o caminho de onde encontrar o mesmo, dessa forma eu acredito estar incorreta a formulação da descrição do caminho na pergunta.
+
+## 3. Ferramentas
+
+Relacione cada item à função que você acredita que ele cumpre. Não pesquise antes da primeira tentativa.
+
+- VS Code
+  **Minha resposta:** uma IDE que permite o desenvolvimento de projetos através de linha de códigos.
+- navegador
+  **Minha resposta:** Ferramenta utilizada para pesquisar conteudos e conseguir visualizar como está ficando o projeto desenvolvido através das extensões da IDE.
+- PowerShell
+  **Minha resposta:** Terminal que executa linhas de comando principalmente para instalação de recursos necessários para desenvolvimento de projetos.
+- Node.js
+  **Minha resposta:** Framework utilizado para conectar ao banco de dados.
+- npm
+  **Minha resposta:** Pacote de dados que permite o desenvolvimento de linguagens de programação como REACT.
+- Git
+  **Minha resposta:** Versionamento e controle de código.
+
+Depois, marque quais você já utilizou de propósito e quais apenas reconhece pelo nome.
+
+**Minha resposta:** Utilizadas:
+VS Code, Navegador, Git.
+
+## 4. Leitura de comandos
+
+Sem executá-los, compare:
+
+```powershell
+Get-ChildItem
+node --version
+npm.cmd --version
+git init
+npm.cmd install
+```
+
+1. Quais parecem apenas consultar informações?
+   **Minha resposta:** todos que tem "--version"
+2. Quais parecem modificar o projeto ou o ambiente?
+   **Minha resposta:** Get-ChildItem e npm.cmd install
+3. Que informação você buscaria antes de executar um comando desconhecido?
+   **Minha resposta:** Eu buscaria saber para que ele serve e como vai impactar no meu projeto durante o meu desenvolvimento.
+
+## 5. Explicação final
+
+Explique em poucas frases como editor, terminal, Node.js, npm e Git se relacionam. Não se preocupe em acertar tudo; dúvidas e hipóteses ajudam a escolher a primeira aula.
+
+**Minha resposta:**
+O git inicia o repositorio através do terminal é possível instalar o node.js e baixar os pacotes de dados npm com o ambiente já preparado eu utilizo a IDE (editor) para desenvolver o meu projeto. A cada nova versão ou quando eu acabar de desenvolver uma task eu versiono e mando para o meu repositório através do git.

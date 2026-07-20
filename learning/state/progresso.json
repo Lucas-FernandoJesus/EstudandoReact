@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "moduloAtual": "00-ambientacao",
+  "statusGeral": "em_andamento",
+  "modulos": [
+    { "id": "00-ambientacao", "status": "em_andamento", "dominio": 1 },
+    { "id": "01-fundamentos-web", "status": "bloqueado", "dominio": null },
+    { "id": "02-html", "status": "bloqueado", "dominio": null },
+    { "id": "03-css", "status": "bloqueado", "dominio": null },
+    { "id": "04-javascript", "status": "bloqueado", "dominio": null },
+    { "id": "05-git-praticas", "status": "bloqueado", "dominio": null },
+    { "id": "06-typescript", "status": "bloqueado", "dominio": null },
+    { "id": "07-react", "status": "bloqueado", "dominio": null },
+    { "id": "08-tailwind", "status": "bloqueado", "dominio": null },
+    { "id": "09-node-apis", "status": "bloqueado", "dominio": null },
+    { "id": "10-dados-bancos", "status": "bloqueado", "dominio": null },
+    { "id": "11-seguranca-qualidade", "status": "bloqueado", "dominio": null },
+    { "id": "12-fullstack-entrega", "status": "bloqueado", "dominio": null }
+  ],
+  "habilidadesObservadas": [
+    {
+      "id": "identificar-partes-de-um-caminho",
+      "dominio": 2,
+      "evidencia": "Identificou arquivo, extensão e pasta direta no caminho apresentado; precisou de orientação para diferenciar caminho absoluto e relativo."
+    },
+    {
+      "id": "distinguir-efeitos-de-comandos",
+      "dominio": 2,
+      "evidencia": "Com orientação, distinguiu saída no terminal de alteração no sistema de arquivos e comparou estados antes e depois."
+    },
+    {
+      "id": "explicar-papeis-das-ferramentas",
+      "dominio": 2,
+      "evidencia": "Em atividade guiada, distinguiu terminal como meio de solicitar comandos, Node.js como runtime de JavaScript fora do navegador, npm como gerenciador de dependências e package.json como registro estruturado lido pelo npm; precisou de pistas para separar gerenciamento, instalação e uso no código."
+    },
+    {
+      "id": "distinguir-editor-navegador-devtools",
+      "dominio": 3,
+      "evidencia": "Distinguiu autonomamente edição no VS Code, interpretação e renderização no navegador e inspeção temporária no DevTools; explicou que extensões não são necessárias para o navegador abrir HTML e previu corretamente que alterações feitas apenas no DevTools desaparecem após recarregar."
+    },
+    {
+      "id": "usar-fluxo-git-basico",
+      "dominio": 2,
+      "evidencia": "Relata uso prévio de Git e associa git add, git commit e git push ao fluxo operacional; distinguiu estados untracked, modified/unstaged e staged, mas precisou de orientação para separar preparação, snapshot local e unidade enviada ao remoto."
+    },
+    {
+      "id": "decompor-comando-powershell",
+      "dominio": 2,
+      "evidencia": "Em revisão guiada, distinguiu comandos, parâmetros explícitos, valores, argumento posicional, diretório atual e caminho completo; corrigiu as confusões entre File e pasta, comando e parâmetro, e diretório atual e raiz após pistas graduais."
+    }
+  ],
+  "ultimaSessao": {
+    "data": "2026-07-11",
+    "modulo": "00-ambientacao",
+    "foco": "Estados de arquivos e fluxo Git básico",
+    "resultado": "Aplicação guiada: classificou arquivos como untracked, modified/unstaged e staged e demonstrou familiaridade com add, commit e push; a distinção entre preparação, snapshot local e envio de commits exigiu orientação, mantendo domínio 2."
+  }
+}

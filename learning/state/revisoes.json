@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "fila": [
+    {
+      "id": "revisao-autonoma-decompor-comando-powershell",
+      "habilidade": "decompor-comando-powershell",
+      "agendamento": "proxima_sessao",
+      "status": "pendente",
+      "motivo": "A revisão de 2026-07-11 foi concluída com pistas; falta confirmar aplicação autônoma.",
+      "atividade": "Apresentar uma nova sequência curta de comandos e pedir, sem pistas nem consulta, que identifique comandos, parâmetros, valores, tipo, nome, diretório atual e caminho completo."
+    },
+    {
+      "id": "revisao-autonoma-papeis-terminal-node-npm-package-json",
+      "habilidade": "explicar-papeis-das-ferramentas",
+      "agendamento": "proxima_sessao",
+      "status": "pendente",
+      "motivo": "As distinções entre terminal, Node.js, npm e package.json foram alcançadas após várias pistas; falta confirmar compreensão autônoma.",
+      "atividade": "Apresentar um cenário novo, sem consulta nem pistas, e pedir que explique o papel de terminal, Node.js, npm e package.json e a sequência entre solicitar, disponibilizar e usar uma dependência."
+    },
+    {
+      "id": "revisao-espacada-editor-navegador-devtools",
+      "habilidade": "distinguir-editor-navegador-devtools",
+      "agendamento": "ao_retomar_html_css_javascript",
+      "status": "pendente",
+      "motivo": "A habilidade foi demonstrada autonomamente; convém verificar sua transferência em um problema real de página.",
+      "atividade": "Apresentar um problema visual ou erro de execução e pedir qual ferramenta usar, onde investigar e em qual arquivo salvar uma correção persistente."
+    },
+    {
+      "id": "revisao-contextual-fluxo-git-basico",
+      "habilidade": "usar-fluxo-git-basico",
+      "agendamento": "antes_de_um_commit_real_autorizado",
+      "status": "pendente",
+      "motivo": "O estudante relata domínio operacional e pediu para não repetir exercícios básicos; a verificação deve ocorrer apenas em contexto real.",
+      "atividade": "Antes de um commit real e autorizado, pedir que antecipe o que está staged, o que o commit registrará localmente e o que um push publicará."
+    }
+  ],
+  "historico": [
+    {
+      "data": "2026-07-10",
+      "tipo": "checkpoint",
+      "habilidade": "decompor-comando-powershell",
+      "resultado": "acerto_com_pistas",
+      "dominioAtribuido": 2,
+      "evidencia": "Identificou New-Item, Directory e treino corretamente após perguntas orientadoras."
+    },
+    {
+      "data": "2026-07-11",
+      "tipo": "revisao",
+      "habilidade": "decompor-comando-powershell",
+      "resultado": "acerto_com_pistas",
+      "dominioAtribuido": 2,
+      "evidencia": "Na sequência Set-Location aulas e New-Item -ItemType Directory -Name pratica, distinguiu comandos, parâmetros explícitos, valores, argumento posicional, diretório atual e caminho completo após pistas graduais; relatou que os exercícios de fixação ajudaram na identificação."
+    },
+    {
+      "data": "2026-07-11",
+      "tipo": "checkpoint",
+      "habilidade": "explicar-papeis-das-ferramentas",
+      "resultado": "acerto_com_pistas",
+      "dominioAtribuido": 2,
+      "evidencia": "Após correções e pistas graduais, distinguiu terminal, Node.js, npm e package.json em um fluxo integrado; ao final explicou corretamente que Node.js executa app.js fora do navegador e que npm lê o registro de dependências."
+    },
+    {
+      "data": "2026-07-11",
+      "tipo": "checkpoint",
+      "habilidade": "distinguir-editor-navegador-devtools",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Associou corretamente VS Code, navegador e DevTools sem pistas, explicou a independência das extensões do editor e previu que uma alteração feita apenas no DevTools não persiste após recarregar."
+    },
+    {
+      "data": "2026-07-11",
+      "tipo": "checkpoint",
+      "habilidade": "usar-fluxo-git-basico",
+      "resultado": "acerto_com_pistas",
+      "dominioAtribuido": 2,
+      "evidencia": "Classificou corretamente estados de arquivos e relatou uso de add, commit e push; precisou de orientação para distinguir o conteúdo preparado do commit local e do que é enviado ao remoto. Solicitou não repetir exercícios Git básicos."
+    }
+  ],
+  "regra": "Agendar revisões de forma adaptativa após evidências de aprendizagem; aproximar após erro e ampliar após recuperação autônoma."
+}

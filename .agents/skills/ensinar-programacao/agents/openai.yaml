@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ensinar Programação"
+  short_description: "Ensino guiado de programação sem respostas prontas"
+  default_prompt: "Use $ensinar-programacao para me ensinar um conceito de programação com exemplos análogos e exercícios guiados."

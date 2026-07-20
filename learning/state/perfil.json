@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "diagnostico_inicial_em_andamento",
+  "idioma": "pt-BR",
+  "objetivoGeral": "Compreender JavaScript para avançar para React e criar projetos visando uma vaga como programador ou atuação como freelancer.",
+  "experienciaAnterior": "Já criou uma landing page estática com HTML e CSS, usando Flexbox, responsividade, imagens, links e listas; não declarou experiência prática com JavaScript ou Tailwind.",
+  "tempoDisponivel": "Disponibilidade pretendida todos os dias, das 19h30 às 22h30; manter um dia semanal de carga leve ou descanso conforme necessidade.",
+  "preferencias": {
+    "solucoesCompletasDeExercicios": false,
+    "exemplosAnalogos": true,
+    "pistasGraduais": true,
+    "conteudosVisuais": true,
+    "demonstracoes": true,
+    "praticaAtiva": true
+  },
+  "restricoes": {
+    "alterarCodigoSemPermissao": false,
+    "alterarArquivosSemPermissao": false,
+    "instalarOuConfigurarSemPermissao": false
+  },
+  "ambienteObservado": {
+    "sistema": "Windows",
+    "shell": "PowerShell",
+    "diretorioInicialmenteVazio": true,
+    "repositorioGitInicializado": false,
+    "ferramentas": {
+      "node": "25.0.0",
+      "npm": "11.6.2",
+      "npx": "11.6.2",
+      "git": "2.55.0.windows.2",
+      "vscode": "1.127.0"
+    },
+    "observacoes": [
+      "npm.ps1 e npx.ps1 foram bloqueados no diagnóstico; npm.cmd e npx.cmd responderam normalmente.",
+      "Nenhuma instalação ou reconfiguração foi realizada."
+    ]
+  },
+  "atualizadoEm": "2026-07-10"
+}
