@@ -7,7 +7,7 @@
     { "id": "01-fundamentos-web", "status": "bloqueado", "dominio": null },
     { "id": "02-html", "status": "bloqueado", "dominio": null },
     { "id": "03-css", "status": "bloqueado", "dominio": null },
-    { "id": "04-javascript", "status": "em_andamento", "dominio": 1 },
+    { "id": "04-javascript", "status": "em_andamento", "dominio": 2 },
     { "id": "05-git-praticas", "status": "bloqueado", "dominio": null },
     { "id": "06-typescript", "status": "bloqueado", "dominio": null },
     { "id": "07-react", "status": "bloqueado", "dominio": null },
@@ -50,8 +50,8 @@
     },
     {
       "id": "distinguir-valor-guardado-de-valor-exibido",
-      "dominio": 2,
-      "evidencia": "Acompanhou corretamente os valores de uma variável, mas precisou de pistas graduais para separar atribuição de exibição com console.log."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, armazenou e exibiu autonomamente o retorno de uma função e o resultado de uma expressão booleana, distinguindo o valor guardado da ação de console.log."
     },
     {
       "id": "identificar-tipos-primitivos-javascript",
@@ -61,7 +61,7 @@
     {
       "id": "distinguir-declaracao-e-reatribuicao",
       "dominio": 2,
-      "evidencia": "Reconheceu quais variáveis declaradas com let poderiam mudar, mas inicialmente tratou reatribuições como novas declarações; corrigiu após pergunta orientadora."
+      "evidencia": "Em 2026-07-21, classificou declarações e reatribuições com let e const, mas precisou de uma pista para reconhecer como erro a redeclaração de let no mesmo escopo."
     },
     {
       "id": "avaliar-comparacoes-booleanas",
@@ -75,30 +75,50 @@
     },
     {
       "id": "agrupar-expressoes-logicas",
-      "dominio": 2,
-      "evidencia": "Usou || e ! corretamente, mas precisou de um contraexemplo para corrigir a precedência e agrupar a disjunção com parênteses."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, construiu autonomamente uma regra com &&, ||, ! e parênteses, previu true e depois isolou a expressão booleana sem if/else desnecessário."
     },
     {
       "id": "construir-funcao-simples",
       "dominio": 3,
-      "evidencia": "Criou autonomamente uma função com dois parâmetros, cálculo, return, chamada com argumentos, armazenamento do retorno e console.log."
+      "evidencia": "Em 2026-07-21, após corrigir uma chamada recursiva acidental em atividade guiada, criou autonomamente uma nova função de temperatura com dois parâmetros, if/else, retorno booleano, chamada com dois argumentos, armazenamento e exibição."
     },
     {
       "id": "distinguir-parametros-e-argumentos",
       "dominio": 2,
-      "evidencia": "Inverteu inicialmente os conceitos e depois identificou parâmetros e argumentos corretamente com apoio de comparação entre definição e chamada."
+      "evidencia": "Em 2026-07-21, identificou parâmetros e argumentos em variação autônoma, mas ainda misturou em explicações posteriores os nomes dos parâmetros, os valores de entrada e o valor retornado."
     },
     {
       "id": "explicar-fluxo-de-uma-funcao",
       "dominio": 2,
-      "evidencia": "Ordenou chamada, return, armazenamento e exibição após pista; ainda descreve com alguma imprecisão a diferença entre argumentos e valor retornado."
+      "evidencia": "Em 2026-07-21, rastreou com apoio chamada, return, armazenamento e exibição; transferiu a estrutura para uma função nova, mas a explicação entre entrada e retorno ainda exigiu pistas."
+    },
+    {
+      "id": "criar-e-reconhecer-arrays",
+      "dominio": 2,
+      "evidencia": "Em 2026-07-21, reconheceu arrays como sequências ordenadas em uma variável e aplicou a sintaxe após pistas iniciais."
+    },
+    {
+      "id": "acessar-array-por-indice-explicito",
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, depois de distinguir valor e índice, recuperou autonomamente valores em novas variações usando índices explícitos."
+    },
+    {
+      "id": "usar-length-ultimo-indice-e-limites",
+      "dominio": 2,
+      "evidencia": "Em 2026-07-21, compreendeu que length conta elementos e que o último índice é length - 1, mas precisou de várias decomposições para separar índice calculado, valor recuperado e acesso inexistente que retorna undefined."
+    },
+    {
+      "id": "usar-push-e-pop",
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, adicionou item com push e identificou autonomamente os dois efeitos de pop: alteração do array e retorno do elemento removido."
     }
   ],
   "ultimaSessao": {
-    "data": "2026-07-20",
+    "data": "2026-07-21",
     "modulo": "04-javascript",
-    "foco": "Valores, variáveis, tipos, operadores, condicionais e funções básicas",
-    "resultado": "Iniciou JavaScript e demonstrou aplicação autônoma em tipos primitivos, comparações booleanas, if/else com && e estrutura básica de funções. Precisou de pistas para atribuição versus exibição, reatribuição, agrupamento lógico, parâmetros versus argumentos e fluxo do return.",
-    "proximaAtividade": "Escrever, sem pistas iniciais, uma função que receba saldo e preco, use if/else, retorne um booleano, seja chamada com dois argumentos e tenha o retorno armazenado e exibido; explicar o que entrou como argumento e o que voltou pelo return."
+    "foco": "Integração de funções, revisão de operadores lógicos e introdução a arrays",
+    "resultado": "Construiu autonomamente uma variação de função com condicional e retorno booleano; concluiu a revisão de agrupamento lógico; iniciou arrays e aplicou índices explícitos, push e pop. O fluxo verbal de funções, a redeclaração no mesmo escopo e a relação entre length, último índice e valor recuperado ainda exigiram pistas.",
+    "proximaAtividade": "Resolver sem pistas uma variação curta de arrays combinando índice explícito, length, último item, acesso fora dos limites, push e pop; se a relação estiver firme, iniciar repetição com for...of."
   }
 }

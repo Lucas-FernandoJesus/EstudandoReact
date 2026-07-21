@@ -36,26 +36,34 @@
     {
       "id": "revisao-autonoma-declaracao-reatribuicao",
       "habilidade": "distinguir-declaracao-e-reatribuicao",
-      "agendamento": "proxima_sessao",
+      "agendamento": "revisao_espacada_proxima_sessao",
       "status": "pendente",
-      "motivo": "A distinção entre declarar e reatribuir foi alcançada após pista.",
+      "motivo": "Em 2026-07-21, classificou declarações e reatribuições, mas precisou de pista para identificar a redeclaração de let no mesmo escopo.",
       "atividade": "Apresentar uma variação curta com let e const e pedir, sem pistas, que identifique declarações, reatribuições e possíveis erros."
-    },
-    {
-      "id": "revisao-autonoma-agrupamento-logico",
-      "habilidade": "agrupar-expressoes-logicas",
-      "agendamento": "apos_integracao_funcao_condicional",
-      "status": "pendente",
-      "motivo": "A expressão com &&, || e ! foi corrigida após contraexemplo.",
-      "atividade": "Propor uma nova regra booleana em outro domínio e pedir que use parênteses sem pistas sobre precedência."
     },
     {
       "id": "revisao-fluxo-funcao",
       "habilidade": "explicar-fluxo-de-uma-funcao",
+      "agendamento": "revisao_espacada_proxima_sessao",
+      "status": "pendente",
+      "motivo": "Em 2026-07-21, transferiu a estrutura para nova função, mas ainda precisou de pistas para separar argumentos, retorno e variável receptora.",
+      "atividade": "Na próxima função, pedir que explique separadamente os argumentos enviados, o valor retornado e a variável que recebe o retorno."
+    },
+    {
+      "id": "revisao-arrays-length-indices-limites",
+      "habilidade": "usar-length-ultimo-indice-e-limites",
       "agendamento": "proxima_sessao",
       "status": "pendente",
-      "motivo": "A estrutura foi construída autonomamente, mas a explicação de argumento, return e armazenamento ainda exigiu pistas.",
-      "atividade": "Na próxima função, pedir que explique separadamente os argumentos enviados, o valor retornado e a variável que recebe o retorno."
+      "motivo": "A distinção entre quantidade, último índice, índice calculado e valor recuperado exigiu várias decomposições em 2026-07-21.",
+      "atividade": "Propor uma variação curta sem pistas com length, length - 1 e acesso em length; pedir o índice calculado e o valor final separadamente."
+    },
+    {
+      "id": "revisao-espacada-indices-push-pop",
+      "habilidade": "acessar-array-por-indice-explicito-e-usar-push-pop",
+      "agendamento": "apos_revisao_de_length",
+      "status": "pendente",
+      "motivo": "Índices explícitos, push e pop foram aplicados corretamente; falta confirmar retenção espaçada.",
+      "atividade": "Em um novo array, pedir acesso por índice, adição com push e remoção com pop, incluindo o valor retornado por pop."
     }
   ],
   "historico": [
@@ -146,6 +154,54 @@
       "resultado": "acerto_com_pistas",
       "dominioAtribuido": 2,
       "evidencia": "Corrigiu a ordem para chamada, return, armazenamento e exibição; ainda precisa explicar com precisão o que entra como argumento e o que volta como retorno."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "revisao",
+      "habilidade": "construir-funcao-simples-e-explicar-fluxo",
+      "resultado": "transferencia_autonoma_com_explicacao_guiada",
+      "dominioAtribuido": 2,
+      "evidencia": "Corrigiu com apoio uma chamada recursiva acidental e depois criou autonomamente a função de temperatura; a distinção verbal entre argumentos, retorno e armazenamento ainda exigiu pistas."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "revisao",
+      "habilidade": "distinguir-declaracao-e-reatribuicao",
+      "resultado": "acerto_com_pista",
+      "dominioAtribuido": 2,
+      "evidencia": "Classificou corretamente declarações, reatribuições e const, mas precisou de pista para reconhecer a redeclaração de let no mesmo escopo."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "revisao",
+      "habilidade": "agrupar-expressoes-logicas",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Usou &&, ||, ! e parênteses corretamente em nova regra, previu true e isolou a expressão booleana sem if/else."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "checkpoint",
+      "habilidade": "acessar-array-por-indice-explicito",
+      "resultado": "acerto_autonomo_apos_introducao",
+      "dominioAtribuido": 3,
+      "evidencia": "Após distinguir valor e índice, recuperou corretamente valores em novas variações usando índices explícitos."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "checkpoint",
+      "habilidade": "usar-length-ultimo-indice-e-limites",
+      "resultado": "acerto_com_varias_pistas",
+      "dominioAtribuido": 2,
+      "evidencia": "Concluiu que length conta elementos, o último índice é length - 1 e acesso fora retorna undefined, após decompor repetidamente índice calculado e valor recuperado."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "checkpoint",
+      "habilidade": "usar-push-e-pop",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Adicionou item com push e identificou corretamente que pop altera o array e retorna o último item removido."
     }
   ],
   "regra": "Agendar revisões de forma adaptativa após evidências de aprendizagem; aproximar após erro e ampliar após recuperação autônoma."
