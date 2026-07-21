@@ -86,17 +86,17 @@
     {
       "id": "distinguir-parametros-e-argumentos",
       "dominio": 2,
-      "evidencia": "Em 2026-07-21, identificou parâmetros e argumentos em variação autônoma, mas ainda misturou em explicações posteriores os nomes dos parâmetros, os valores de entrada e o valor retornado."
+      "evidencia": "Em 2026-07-21, identificou corretamente parâmetro e argumento na variação com pedidos, mas a classificação anterior da função de cursos ainda exigiu perguntas orientadoras; manter recuperação autônoma."
     },
     {
       "id": "explicar-fluxo-de-uma-funcao",
       "dominio": 2,
-      "evidencia": "Em 2026-07-21, rastreou com apoio chamada, return, armazenamento e exibição; transferiu a estrutura para uma função nova, mas a explicação entre entrada e retorno ainda exigiu pistas."
+      "evidencia": "Em 2026-07-21, construiu funções com acumulador local, return, chamada, armazenamento e exibição; corrigiu argumento e variável receptora após pistas e ainda precisa transferir o fluxo sem ajuda."
     },
     {
       "id": "criar-e-reconhecer-arrays",
-      "dominio": 2,
-      "evidencia": "Em 2026-07-21, reconheceu arrays como sequências ordenadas em uma variável e aplicou a sintaxe após pistas iniciais."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, criou autonomamente novos arrays de valores e de objetos, percorreu-os e explicou sua organização ordenada."
     },
     {
       "id": "acessar-array-por-indice-explicito",
@@ -106,19 +106,54 @@
     {
       "id": "usar-length-ultimo-indice-e-limites",
       "dominio": 2,
-      "evidencia": "Em 2026-07-21, compreendeu que length conta elementos e que o último índice é length - 1, mas precisou de várias decomposições para separar índice calculado, valor recuperado e acesso inexistente que retorna undefined."
+      "evidencia": "Em 2026-07-21, usou length corretamente como quantidade e divisor da média; corrigiu com pergunta orientadora que length - 1 é o último índice válido e que acesso em length retorna undefined."
     },
     {
       "id": "usar-push-e-pop",
       "dominio": 3,
       "evidencia": "Em 2026-07-21, adicionou item com push e identificou autonomamente os dois efeitos de pop: alteração do array e retorno do elemento removido."
+    },
+    {
+      "id": "percorrer-array-com-for-of",
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, transferiu autonomamente for...of para novos arrays, separou coleção e variável de item e previu a ordem dos valores percorridos."
+    },
+    {
+      "id": "usar-contador-e-acumulador-em-repeticao",
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, contou valores que atendiam a uma condição, somou vendas e acumulou durações de objetos filtrados, mantendo a exibição do total fora do laço."
+    },
+    {
+      "id": "calcular-media-com-array",
+      "dominio": 2,
+      "evidencia": "Em 2026-07-21, calculou média com acumulador e length, mas precisou corrigir a confusão entre tempos e tempo e rastrear os totais parciais até 180."
+    },
+    {
+      "id": "criar-acessar-e-alterar-objetos",
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, criou objetos com propriedades de tipos diferentes, acessou por nome, alterou propriedade em objeto const e distinguiu criação de atualização."
+    },
+    {
+      "id": "integrar-array-de-objetos-condicao-e-acumulador",
+      "dominio": 3,
+      "evidencia": "Em 2026-07-21, percorreu cursos como objetos, filtrou pela propriedade disponivel, exibiu nomes e somou somente as durações selecionadas, chegando a 24."
+    },
+    {
+      "id": "integrar-funcao-com-array-de-objetos",
+      "dominio": 2,
+      "evidencia": "Em 2026-07-21, criou função que recebe array de objetos, filtra, acumula e retorna; a primeira integração funcionou, mas a variação com pedidos ainda confundiu a coleção com o item atual."
+    },
+    {
+      "id": "distinguir-colecao-e-item-no-for-of",
+      "dominio": 2,
+      "evidencia": "Em 2026-07-21, corrigiu conflitos como etapas/etapa e tempos/tempo, mas repetiu a troca de pedidos por pedido ao consultar propriedades dentro do laço."
     }
   ],
   "ultimaSessao": {
     "data": "2026-07-21",
     "modulo": "04-javascript",
-    "foco": "Integração de funções, revisão de operadores lógicos e introdução a arrays",
-    "resultado": "Construiu autonomamente uma variação de função com condicional e retorno booleano; concluiu a revisão de agrupamento lógico; iniciou arrays e aplicou índices explícitos, push e pop. O fluxo verbal de funções, a redeclaração no mesmo escopo e a relação entre length, último índice e valor recuperado ainda exigiram pistas.",
-    "proximaAtividade": "Resolver sem pistas uma variação curta de arrays combinando índice explícito, length, último item, acesso fora dos limites, push e pop; se a relação estiver firme, iniciar repetição com for...of."
+    "foco": "Repetição com for...of, contadores, acumuladores, objetos e funções com arrays de objetos",
+    "resultado": "Consolidou for...of, condições, contadores, acumuladores e objetos em variações autônomas; integrou array de objetos com filtro e soma. A média e o fluxo verbal de funções foram concluídos com pistas. A distinção entre coleção plural e item singular ainda oscila dentro de laços.",
+    "proximaAtividade": "Retomar a função pagar: rastrear o primeiro objeto guardado em pedido, substituir as duas consultas feitas indevidamente em pedidos pelas consultas ao item atual, prever o retorno 100 e revisar parâmetro, argumento, retorno e variável receptora."
   }
 }

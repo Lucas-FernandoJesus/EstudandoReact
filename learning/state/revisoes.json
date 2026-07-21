@@ -44,26 +44,42 @@
     {
       "id": "revisao-fluxo-funcao",
       "habilidade": "explicar-fluxo-de-uma-funcao",
-      "agendamento": "revisao_espacada_proxima_sessao",
+      "agendamento": "proxima_sessao",
       "status": "pendente",
-      "motivo": "Em 2026-07-21, transferiu a estrutura para nova função, mas ainda precisou de pistas para separar argumentos, retorno e variável receptora.",
-      "atividade": "Na próxima função, pedir que explique separadamente os argumentos enviados, o valor retornado e a variável que recebe o retorno."
+      "motivo": "Em 2026-07-21, construiu a função integradora corretamente, mas precisou de pistas para distinguir argumento e variável receptora; a variação seguinte ainda contém erro entre coleção e item.",
+      "atividade": "Concluir a função pagar e pedir que identifique sem pistas parâmetro, argumento, valor retornado e variável receptora."
     },
     {
       "id": "revisao-arrays-length-indices-limites",
       "habilidade": "usar-length-ultimo-indice-e-limites",
-      "agendamento": "proxima_sessao",
+      "agendamento": "revisao_espacada_futura",
       "status": "pendente",
-      "motivo": "A distinção entre quantidade, último índice, índice calculado e valor recuperado exigiu várias decomposições em 2026-07-21.",
-      "atividade": "Propor uma variação curta sem pistas com length, length - 1 e acesso em length; pedir o índice calculado e o valor final separadamente."
+      "motivo": "Na continuação de 2026-07-21, usou length como quantidade e corrigiu último índice e acesso fora do limite após uma pergunta orientadora; falta retenção espaçada.",
+      "atividade": "Em outro contexto, pedir sem pistas a quantidade, o último índice válido e o resultado do acesso no índice igual a length."
     },
     {
       "id": "revisao-espacada-indices-push-pop",
       "habilidade": "acessar-array-por-indice-explicito-e-usar-push-pop",
-      "agendamento": "apos_revisao_de_length",
+      "agendamento": "concluida_em_2026-07-21",
+      "status": "concluida",
+      "motivo": "Previu autonomamente acesso por índice, efeito de push, estado final do array e valor retornado por pop em nova variação.",
+      "atividade": "Nenhuma revisão imediata; retomar apenas em uso real."
+    },
+    {
+      "id": "revisao-colecao-item-for-of",
+      "habilidade": "distinguir-colecao-e-item-no-for-of",
+      "agendamento": "proxima_sessao_prioridade",
       "status": "pendente",
-      "motivo": "Índices explícitos, push e pop foram aplicados corretamente; falta confirmar retenção espaçada.",
-      "atividade": "Em um novo array, pedir acesso por índice, adição com push e remoção com pop, incluindo o valor retornado por pop."
+      "motivo": "Em 2026-07-21, confundiu repetidamente a coleção plural com o item singular em etapas/etapa, tempos/tempo e pedidos/pedido.",
+      "atividade": "Retomar a função pagar, rastrear o objeto guardado em pedido na primeira repetição e revisar as duas consultas de propriedade dentro do laço."
+    },
+    {
+      "id": "revisao-media-com-acumulador",
+      "habilidade": "calcular-media-com-array",
+      "agendamento": "revisao_espacada_futura",
+      "status": "pendente",
+      "motivo": "Concluiu média com acumulador e length, mas precisou corrigir a variável somada e rastrear os totais parciais.",
+      "atividade": "Calcular autonomamente a média de um novo array, prevendo soma, quantidade e resultado antes de executar."
     }
   ],
   "historico": [
@@ -202,6 +218,38 @@
       "resultado": "acerto_autonomo",
       "dominioAtribuido": 3,
       "evidencia": "Adicionou item com push e identificou corretamente que pop altera o array e retorna o último item removido."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "revisao",
+      "habilidade": "arrays-length-indices-limites-e-push-pop",
+      "resultado": "limites_com_pista_e_push_pop_autonomo",
+      "dominioAtribuido": 2,
+      "evidencia": "Previu corretamente os valores, o estado final do array e o retorno de pop; após pergunta, precisou nomear length - 1 como último índice válido e o acesso em length como undefined."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "checkpoint",
+      "habilidade": "usar-for-of-contador-e-acumulador",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Transferiu for...of para novas listas, combinou if, contador e acumulador e explicou a diferença entre resultados parciais e total final."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "checkpoint",
+      "habilidade": "criar-alterar-e-integrar-objetos",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Criou e alterou objetos, percorreu array de objetos, filtrou pela disponibilidade e acumulou apenas as durações selecionadas."
+    },
+    {
+      "data": "2026-07-21",
+      "tipo": "revisao",
+      "habilidade": "integrar-funcao-array-de-objetos-e-explicar-fluxo",
+      "resultado": "codigo_integrado_com_explicacao_guiada",
+      "dominioAtribuido": 2,
+      "evidencia": "Construiu função com parâmetro, acumulador local, return, chamada e variável receptora; corrigiu a terminologia após pistas e repetiu a confusão coleção/item na variação com pedidos."
     }
   ],
   "regra": "Agendar revisões de forma adaptativa após evidências de aprendizagem; aproximar após erro e ampliar após recuperação autônoma."
