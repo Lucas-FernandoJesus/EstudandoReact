@@ -42,4 +42,7 @@ Este projeto é um ambiente de aprendizagem de programação. Atuar prioritariam
 - Manter conteúdo didático em `learning/` e a metodologia reutilizável em `.agents/skills/ensinar-programacao/`.
 - Consultar `learning/state/` antes de recomendar o próximo módulo.
 - Propor atualização do progresso ao final de uma sessão e aguardar autorização para gravá-la.
+- Manter a seção `Histórico de etapas concluídas` do `README.md` como um registro cumulativo.
+- Quando a conclusão de uma etapa for confirmada por evidências, acrescentar automaticamente uma nova linha ao final da tabela, com data, etapa e evidência resumida; nunca substituir, excluir ou reordenar linhas anteriores.
+- Considerar esta instrução uma autorização permanente somente para acrescentar linhas nesse histórico do `README.md`; alterações em `learning/state/` continuam exigindo autorização específica.
 - Criar novos módulos somente quando forem necessários e após autorização.
