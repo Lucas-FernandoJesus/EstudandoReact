@@ -4,18 +4,18 @@
     {
       "id": "revisao-autonoma-decompor-comando-powershell",
       "habilidade": "decompor-comando-powershell",
-      "agendamento": "proxima_sessao",
+      "agendamento": "em_contexto_real_de_projeto",
       "status": "pendente",
       "motivo": "A revisão de 2026-07-11 foi concluída com pistas; falta confirmar aplicação autônoma.",
-      "atividade": "Apresentar uma nova sequência curta de comandos e pedir, sem pistas nem consulta, que identifique comandos, parâmetros, valores, tipo, nome, diretório atual e caminho completo."
+      "atividade": "Verificar caminhos e efeitos de comandos somente quando forem necessários em um projeto real; não repetir exercícios isolados de PowerShell."
     },
     {
       "id": "revisao-autonoma-papeis-terminal-node-npm-package-json",
       "habilidade": "explicar-papeis-das-ferramentas",
-      "agendamento": "proxima_sessao",
+      "agendamento": "em_contexto_real_de_projeto",
       "status": "pendente",
       "motivo": "As distinções entre terminal, Node.js, npm e package.json foram alcançadas após várias pistas; falta confirmar compreensão autônoma.",
-      "atividade": "Apresentar um cenário novo, sem consulta nem pistas, e pedir que explique o papel de terminal, Node.js, npm e package.json e a sequência entre solicitar, disponibilizar e usar uma dependência."
+      "atividade": "Retomar terminal, Node.js, npm e package.json durante a execução real de um projeto; evitar uma nova revisão isolada."
     },
     {
       "id": "revisao-espacada-editor-navegador-devtools",
@@ -32,6 +32,30 @@
       "status": "pendente",
       "motivo": "O estudante relata domínio operacional e pediu para não repetir exercícios básicos; a verificação deve ocorrer apenas em contexto real.",
       "atividade": "Antes de um commit real e autorizado, pedir que antecipe o que está staged, o que o commit registrará localmente e o que um push publicará."
+    },
+    {
+      "id": "revisao-autonoma-declaracao-reatribuicao",
+      "habilidade": "distinguir-declaracao-e-reatribuicao",
+      "agendamento": "proxima_sessao",
+      "status": "pendente",
+      "motivo": "A distinção entre declarar e reatribuir foi alcançada após pista.",
+      "atividade": "Apresentar uma variação curta com let e const e pedir, sem pistas, que identifique declarações, reatribuições e possíveis erros."
+    },
+    {
+      "id": "revisao-autonoma-agrupamento-logico",
+      "habilidade": "agrupar-expressoes-logicas",
+      "agendamento": "apos_integracao_funcao_condicional",
+      "status": "pendente",
+      "motivo": "A expressão com &&, || e ! foi corrigida após contraexemplo.",
+      "atividade": "Propor uma nova regra booleana em outro domínio e pedir que use parênteses sem pistas sobre precedência."
+    },
+    {
+      "id": "revisao-fluxo-funcao",
+      "habilidade": "explicar-fluxo-de-uma-funcao",
+      "agendamento": "proxima_sessao",
+      "status": "pendente",
+      "motivo": "A estrutura foi construída autonomamente, mas a explicação de argumento, return e armazenamento ainda exigiu pistas.",
+      "atividade": "Na próxima função, pedir que explique separadamente os argumentos enviados, o valor retornado e a variável que recebe o retorno."
     }
   ],
   "historico": [
@@ -74,6 +98,54 @@
       "resultado": "acerto_com_pistas",
       "dominioAtribuido": 2,
       "evidencia": "Classificou corretamente estados de arquivos e relatou uso de add, commit e push; precisou de orientação para distinguir o conteúdo preparado do commit local e do que é enviado ao remoto. Solicitou não repetir exercícios Git básicos."
+    },
+    {
+      "data": "2026-07-20",
+      "tipo": "checkpoint",
+      "habilidade": "identificar-tipos-primitivos-javascript",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Identificou string, number e boolean corretamente em quatro declarações."
+    },
+    {
+      "data": "2026-07-20",
+      "tipo": "checkpoint",
+      "habilidade": "avaliar-comparacoes-booleanas",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Explicou autonomamente a comparação 17 >= 18, o resultado false e o tipo boolean, relacionando a lógica ao uso de CASE em SQL."
+    },
+    {
+      "data": "2026-07-20",
+      "tipo": "checkpoint",
+      "habilidade": "usar-if-else-e-operador-and",
+      "resultado": "acerto_autonomo",
+      "dominioAtribuido": 3,
+      "evidencia": "Escreveu if/else com idade, carteira e && e explicou corretamente o comportamento quando uma condição é falsa."
+    },
+    {
+      "data": "2026-07-20",
+      "tipo": "checkpoint",
+      "habilidade": "agrupar-expressoes-logicas",
+      "resultado": "acerto_com_pistas",
+      "dominioAtribuido": 2,
+      "evidencia": "Corrigiu o agrupamento de ingresso ou convite e evento não cancelado após contraexemplo sobre precedência."
+    },
+    {
+      "data": "2026-07-20",
+      "tipo": "checkpoint",
+      "habilidade": "construir-funcao-simples",
+      "resultado": "acerto_autonomo_com_nomes_imprecisos",
+      "dominioAtribuido": 3,
+      "evidencia": "Construiu do zero função com dois parâmetros, multiplicação, return, chamada, armazenamento e exibição."
+    },
+    {
+      "data": "2026-07-20",
+      "tipo": "checkpoint",
+      "habilidade": "explicar-fluxo-de-uma-funcao",
+      "resultado": "acerto_com_pistas",
+      "dominioAtribuido": 2,
+      "evidencia": "Corrigiu a ordem para chamada, return, armazenamento e exibição; ainda precisa explicar com precisão o que entra como argumento e o que volta como retorno."
     }
   ],
   "regra": "Agendar revisões de forma adaptativa após evidências de aprendizagem; aproximar após erro e ampliar após recuperação autônoma."

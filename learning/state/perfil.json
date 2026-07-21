@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "status": "diagnostico_inicial_em_andamento",
+  "status": "trilha_em_andamento",
   "idioma": "pt-BR",
   "objetivoGeral": "Compreender JavaScript para avançar para React e criar projetos visando uma vaga como programador ou atuação como freelancer.",
-  "experienciaAnterior": "Já criou uma landing page estática com HTML e CSS, usando Flexbox, responsividade, imagens, links e listas; não declarou experiência prática com JavaScript ou Tailwind.",
+  "experienciaAnterior": "Já criou uma landing page estática com HTML e CSS, usando Flexbox, responsividade, imagens, links e listas; trabalha com lógica SQL e CASE; iniciou fundamentos de JavaScript em 2026-07-20; não declarou experiência prática com Tailwind.",
   "tempoDisponivel": "Disponibilidade pretendida todos os dias, das 19h30 às 22h30; manter um dia semanal de carga leve ou descanso conforme necessidade.",
   "preferencias": {
     "solucoesCompletasDeExercicios": false,
@@ -11,7 +11,9 @@
     "pistasGraduais": true,
     "conteudosVisuais": true,
     "demonstracoes": true,
-    "praticaAtiva": true
+    "praticaAtiva": true,
+    "salvarRespostasAutomaticamente": true,
+    "formatoRegistroRespostas": "learning/logs/YYYY-MM-DD.md"
   },
   "restricoes": {
     "alterarCodigoSemPermissao": false,
@@ -35,5 +37,5 @@
       "Nenhuma instalação ou reconfiguração foi realizada."
     ]
   },
-  "atualizadoEm": "2026-07-10"
+  "atualizadoEm": "2026-07-20"
 }

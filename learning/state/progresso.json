@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "moduloAtual": "00-ambientacao",
+  "moduloAtual": "04-javascript",
   "statusGeral": "em_andamento",
   "modulos": [
-    { "id": "00-ambientacao", "status": "em_andamento", "dominio": 1 },
+    { "id": "00-ambientacao", "status": "em_revisao_contextual", "dominio": 2 },
     { "id": "01-fundamentos-web", "status": "bloqueado", "dominio": null },
     { "id": "02-html", "status": "bloqueado", "dominio": null },
     { "id": "03-css", "status": "bloqueado", "dominio": null },
-    { "id": "04-javascript", "status": "bloqueado", "dominio": null },
+    { "id": "04-javascript", "status": "em_andamento", "dominio": 1 },
     { "id": "05-git-praticas", "status": "bloqueado", "dominio": null },
     { "id": "06-typescript", "status": "bloqueado", "dominio": null },
     { "id": "07-react", "status": "bloqueado", "dominio": null },
@@ -47,12 +47,58 @@
       "id": "decompor-comando-powershell",
       "dominio": 2,
       "evidencia": "Em revisão guiada, distinguiu comandos, parâmetros explícitos, valores, argumento posicional, diretório atual e caminho completo; corrigiu as confusões entre File e pasta, comando e parâmetro, e diretório atual e raiz após pistas graduais."
+    },
+    {
+      "id": "distinguir-valor-guardado-de-valor-exibido",
+      "dominio": 2,
+      "evidencia": "Acompanhou corretamente os valores de uma variável, mas precisou de pistas graduais para separar atribuição de exibição com console.log."
+    },
+    {
+      "id": "identificar-tipos-primitivos-javascript",
+      "dominio": 3,
+      "evidencia": "Classificou autonomamente valores como string, number e boolean em uma nova sequência de declarações."
+    },
+    {
+      "id": "distinguir-declaracao-e-reatribuicao",
+      "dominio": 2,
+      "evidencia": "Reconheceu quais variáveis declaradas com let poderiam mudar, mas inicialmente tratou reatribuições como novas declarações; corrigiu após pergunta orientadora."
+    },
+    {
+      "id": "avaliar-comparacoes-booleanas",
+      "dominio": 3,
+      "evidencia": "Previu autonomamente que 17 >= 18 produz false do tipo boolean e explicou a condição usando experiência prévia com lógica SQL."
+    },
+    {
+      "id": "usar-if-else-e-operador-and",
+      "dominio": 3,
+      "evidencia": "Escreveu autonomamente um if/else com comparação e && e explicou que ambas as condições precisam ser verdadeiras."
+    },
+    {
+      "id": "agrupar-expressoes-logicas",
+      "dominio": 2,
+      "evidencia": "Usou || e ! corretamente, mas precisou de um contraexemplo para corrigir a precedência e agrupar a disjunção com parênteses."
+    },
+    {
+      "id": "construir-funcao-simples",
+      "dominio": 3,
+      "evidencia": "Criou autonomamente uma função com dois parâmetros, cálculo, return, chamada com argumentos, armazenamento do retorno e console.log."
+    },
+    {
+      "id": "distinguir-parametros-e-argumentos",
+      "dominio": 2,
+      "evidencia": "Inverteu inicialmente os conceitos e depois identificou parâmetros e argumentos corretamente com apoio de comparação entre definição e chamada."
+    },
+    {
+      "id": "explicar-fluxo-de-uma-funcao",
+      "dominio": 2,
+      "evidencia": "Ordenou chamada, return, armazenamento e exibição após pista; ainda descreve com alguma imprecisão a diferença entre argumentos e valor retornado."
     }
   ],
   "ultimaSessao": {
-    "data": "2026-07-11",
-    "modulo": "00-ambientacao",
-    "foco": "Estados de arquivos e fluxo Git básico",
-    "resultado": "Aplicação guiada: classificou arquivos como untracked, modified/unstaged e staged e demonstrou familiaridade com add, commit e push; a distinção entre preparação, snapshot local e envio de commits exigiu orientação, mantendo domínio 2."
+    "data": "2026-07-20",
+    "modulo": "04-javascript",
+    "foco": "Valores, variáveis, tipos, operadores, condicionais e funções básicas",
+    "resultado": "Iniciou JavaScript e demonstrou aplicação autônoma em tipos primitivos, comparações booleanas, if/else com && e estrutura básica de funções. Precisou de pistas para atribuição versus exibição, reatribuição, agrupamento lógico, parâmetros versus argumentos e fluxo do return.",
+    "proximaAtividade": "Escrever, sem pistas iniciais, uma função que receba saldo e preco, use if/else, retorne um booleano, seja chamada com dois argumentos e tenha o retorno armazenado e exibido; explicar o que entrou como argumento e o que voltou pelo return."
   }
 }
