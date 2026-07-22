@@ -2,7 +2,7 @@
 
 Repositório pessoal dedicado ao aprendizado progressivo de desenvolvimento web, partindo dos fundamentos de JavaScript até a criação de aplicações com React e a integração full-stack.
 
-> Este projeto está em desenvolvimento e funciona como um diário de aprendizagem. No momento, o foco está nos fundamentos de JavaScript; a etapa prática com React virá depois da consolidação dos pré-requisitos.
+> Este projeto está em desenvolvimento e funciona como um diário de aprendizagem. O foco atual e o ponto de retomada são mantidos na fonte operacional de progresso.
 
 ## Objetivo
 
@@ -20,24 +20,15 @@ A trilha foi organizada para avançar de forma gradual por:
 
 ## Progresso atual
 
-O módulo atual é **JavaScript**, com prática dos seguintes conceitos:
+O estado operacional não é duplicado neste arquivo para evitar resumos desatualizados. Consulte:
 
-- variáveis, tipos primitivos e reatribuição;
-- comparações e operadores lógicos;
-- estruturas condicionais com `if` e `else`;
-- funções, parâmetros, argumentos e valores de retorno;
-- arrays, índices, `.length`, `.push()` e `.pop()`;
-- repetição com `for...of`, contadores, acumuladores e médias;
-- criação, acesso e alteração de objetos;
-- integração de arrays de objetos com condições, acumuladores e funções.
-
-O próximo passo é consolidar a diferença entre a coleção e o item atual dentro de `for...of`, concluindo a função de pedidos e revisando o fluxo entre parâmetro, argumento, retorno e variável receptora.
-
-O acompanhamento detalhado pode ser consultado em [`learning/state/progresso.json`](learning/state/progresso.json).
+- o [`índice de aprendizagem`](learning/INDEX.md) para navegar pelo projeto;
+- o [`progresso atual`](learning/state/progresso.json) para módulo, última sessão e ponto de retomada;
+- a [`fila de revisões`](learning/state/revisoes.json) para práticas pendentes.
 
 ## Histórico de etapas concluídas
 
-Este histórico é cumulativo. Cada nova etapa concluída será registrada em uma nova linha ao final da tabela, preservando todos os registros anteriores.
+Este histórico é cumulativo. Cada nova etapa ou checkpoint realizado será registrado em uma nova linha ao final da tabela, preservando todos os registros anteriores. “Concluída” significa que a atividade descrita foi finalizada com a evidência indicada; não significa necessariamente domínio consolidado. O nível de domínio e as revisões pendentes permanecem nas fontes canônicas de `learning/state/`.
 
 | Data | Etapa concluída | Evidência |
 | --- | --- | --- |
@@ -73,12 +64,22 @@ O avanço não depende de um prazo fixo. Cada habilidade é revisada até que po
 ```text
 .
 ├── .agents/
-│   └── skills/                 # Metodologia reutilizável de tutoria
+│   └── skills/                 # Metodologia e scripts reutilizáveis de tutoria
+├── .codex/
+│   ├── agents/                 # Especialistas somente leitura
+│   └── config.toml             # Limites de paralelismo e profundidade
 ├── learning/
+│   ├── INDEX.md                # Mapa de navegação sem duplicar o estado
+│   ├── audits/                 # Relatórios mensais, criados quando necessários
 │   ├── logs/                   # Registros das sessões de estudo
 │   ├── modules/                # Conteúdos e exercícios dos módulos
 │   ├── state/                  # Perfil, progresso e revisões pendentes
 │   └── roadmap.md              # Sequência planejada de aprendizagem
+├── setup/                      # Preparação automatizada e verificável da máquina
+│   ├── install.cmd             # Entrada simples para preparar o ambiente
+│   ├── requirements-tools.txt  # Dependências Python das ferramentas
+│   └── setup-environment.ps1   # Bootstrap seguro para reexecução
+├── .editorconfig               # Regras de codificação e finais de linha
 ├── AGENTS.md                   # Orientações para tutores de IA
 └── README.md
 ```
@@ -87,10 +88,29 @@ O avanço não depende de um prazo fixo. Cada habilidade é revisada até que po
 
 Não é necessário instalar dependências neste estágio. Para explorar o conteúdo:
 
-1. consulte o [`roteiro de aprendizagem`](learning/roadmap.md);
-2. veja os conteúdos e exercícios disponíveis em [`learning/modules`](learning/modules);
-3. acompanhe a evolução em [`learning/state`](learning/state);
-4. leia os registros das sessões em [`learning/logs`](learning/logs).
+1. comece pelo [`índice de aprendizagem`](learning/INDEX.md);
+2. consulte o [`roteiro de aprendizagem`](learning/roadmap.md) para a sequência curricular;
+3. veja os conteúdos e exercícios disponíveis em [`learning/modules`](learning/modules);
+4. acompanhe a evolução em [`learning/state`](learning/state);
+5. leia os registros das sessões em [`learning/logs`](learning/logs).
+
+## Preparar outra máquina
+
+Depois de clonar ou atualizar o repositório, execute na raiz:
+
+```powershell
+.\setup\install.cmd
+```
+
+O bootstrap instala a distribuição ZIP oficial do PowerShell 7 em `%LOCALAPPDATA%\Programs\PowerShell` quando necessário, adiciona a versão ativa ao PATH do usuário, define `RemoteSigned` para esse usuário, cria uma `.venv`, instala as dependências fixadas e valida a skill e os scripts. Ele pode ser executado novamente sem recriar o que já estiver correto.
+
+O único pré-requisito externo é uma instalação oficial do Python 3.8 ou superior acessível como `python` ou `py`. O bootstrap não instala ou substitui o Python do computador; ele isola as dependências deste projeto na `.venv`.
+
+O `git pull` não executa o bootstrap automaticamente. Essa separação é intencional: executar código recém-baixado sem uma ação consciente seria um risco de segurança.
+
+A pasta `setup/` é uma receita pequena e versionada, necessária para preparar ou reparar o ambiente em qualquer máquina. Mantenha-a no projeto; os arquivos baixados durante a instalação são temporários e já são excluídos automaticamente pelo bootstrap.
+
+As configurações locais não são transferidas entre computadores. O Git transfere somente o bootstrap, as regras de codificação e a lista de dependências; execute o mesmo comando em cada máquina.
 
 Para obter uma cópia local do repositório:
 

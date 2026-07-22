@@ -1,13 +1,13 @@
 # Roteiro de aprendizagem
 
-Status atual: aguardando diagnóstico inicial.
+Este arquivo mantém somente a sequência curricular estável. O estado operacional, o módulo atual e o ponto de retomada ficam em [`state/progresso.json`](state/progresso.json).
 
 ## Como este roteiro funciona
 
 - A progressão será baseada em evidências das suas tentativas, não em prazo fixo.
 - Cada módulo começa com um diagnóstico curto e termina com uma aplicação autônoma.
 - Exercícios não incluem respostas. O tutor oferece pistas graduais e exemplos análogos.
-- Nenhum código ou arquivo será criado ou alterado sem sua autorização.
+- Nenhum código, exercício ou módulo será criado ou alterado sem autorização; registros de progresso seguem a exceção automática definida em `AGENTS.md`.
 
 ## Sequência prevista
 
@@ -29,6 +29,6 @@ Status atual: aguardando diagnóstico inicial.
 
 Uma habilidade essencial estará pronta para avanço quando você conseguir aplicá-la em uma variação nova, explicar seu raciocínio e corrigir uma falha com pouca ou nenhuma pista decisiva.
 
-## Próximo marco
+## Como retomar
 
-Concluir o módulo `00-ambientacao`: mapear experiência, objetivos, disponibilidade e ferramentas; depois preparar o primeiro plano de estudo personalizado.
+Execute primeiro o resumidor de contexto da skill `ensinar-programacao`. Consulte o [índice de aprendizagem](INDEX.md) apenas para localizar uma fonte mais detalhada quando o resumo não bastar. Assim, o roteiro não replica informações que mudam a cada sessão.

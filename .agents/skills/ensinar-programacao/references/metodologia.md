@@ -63,4 +63,4 @@ Avançar quando o estudante atingir pelo menos nível 3 nas habilidades essencia
 
 ## Encerramento
 
-Pedir ao estudante que registre: o que aprendeu, onde hesitou, qual evidência mostra progresso e qual será a próxima tentativa. Propor alterações em `learning/state/`, mas só gravá-las após autorização.
+Pedir ao estudante que registre: o que aprendeu, onde hesitou, qual evidência mostra progresso e qual será a próxima tentativa. Salvar automaticamente os registros pedagógicos autorizados pelo `AGENTS.md` nos caminhos definidos por ele; aplicar também as exceções permanentes de correções e testes dentro dos limites descritos nesse arquivo.

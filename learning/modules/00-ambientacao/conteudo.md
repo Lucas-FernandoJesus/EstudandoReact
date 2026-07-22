@@ -4,15 +4,11 @@
 
 Compreender o ambiente de trabalho antes de escrever código: arquivos, caminhos, terminal, editor, navegador, versões e autorização para mudanças.
 
-## O que já foi observado
+## Como usar este material
 
-- Sistema Windows com PowerShell.
-- Node.js, npm, npx, Git e VS Code estão instalados.
-- O diretório começou vazio e não possuía repositório Git inicializado no diagnóstico.
-- No PowerShell, os atalhos `npm.ps1` e `npx.ps1` tiveram acesso negado, mas `npm.cmd` e `npx.cmd` funcionaram.
-- Nenhuma instalação ou alteração de configuração foi realizada.
+Este módulo contém conceitos e enunciados reutilizáveis. O ambiente atual e as preferências ficam em `learning/state/perfil.json`; respostas, tentativas e observações históricas ficam em `learning/logs/`.
 
-Esses dados confirmam presença das ferramentas, mas ainda não demonstram familiaridade com elas. O diagnóstico será baseado nas suas explicações e pequenas tarefas.
+Antes de ensinar uma ferramenta, verificar o ambiente atual e pedir uma explicação ou microtarefa que demonstre o conhecimento do estudante. A presença de uma ferramenta não comprova familiaridade com ela.
 
 ## Conceitos deste módulo
 
@@ -38,7 +34,7 @@ Ferramentas mudam. Registrar a versão torna instruções reproduzíveis e ajuda
 
 ## Sequência sugerida
 
-1. Responder ao diagnóstico em `exercicios.md`.
+1. Aplicar apenas as partes necessárias do diagnóstico em `exercicios.md`.
 2. Praticar identificação de caminhos e comandos não destrutivos.
 3. Explicar o papel de editor, terminal, runtime, gerenciador de pacotes e Git.
 4. Definir objetivo, rotina e primeiro módulo técnico.

@@ -13,29 +13,52 @@
     "demonstracoes": true,
     "praticaAtiva": true,
     "salvarRespostasAutomaticamente": true,
-    "formatoRegistroRespostas": "learning/logs/YYYY-MM-DD.md"
+    "salvarProgressoAutomaticamente": true,
+    "corrigirInconsistenciasAutomaticamente": true,
+    "executarTestesSolicitadosSemNovaAutorizacao": true,
+    "formatoRegistroRespostas": "learning/logs/YYYY-MM-DD.md",
+    "escopoSalvamentoAutomatico": [
+      "learning/logs/YYYY-MM-DD.md",
+      "learning/state/progresso.json",
+      "learning/state/revisoes.json",
+      "README.md#Histórico de etapas concluídas"
+    ],
+    "alteracoesForaDoEscopoExigemAutorizacao": true
   },
   "restricoes": {
-    "alterarCodigoSemPermissao": false,
-    "alterarArquivosSemPermissao": false,
-    "instalarOuConfigurarSemPermissao": false
+    "exigirAutorizacaoParaAlterarCodigoDeExercicio": true,
+    "exigirAutorizacaoParaInstalarOuAtualizar": true,
+    "exigirAutorizacaoParaAcoesExternasOuDestrutivas": true,
+    "excecoesPermanentes": [
+      "salvamento de progresso nos caminhos autorizados",
+      "auditoria mensal com relatório sem aplicação automática",
+      "correções comprovadas nos arquivos de ensino e suporte",
+      "execução de comandos e programas para testes solicitados"
+    ]
   },
   "ambienteObservado": {
     "sistema": "Windows",
-    "shell": "PowerShell",
+    "shell": "PowerShell 7 como padrão do projeto, com Windows PowerShell 5.1 como compatibilidade",
     "diretorioInicialmenteVazio": true,
-    "repositorioGitInicializado": false,
+    "repositorioGitInicializado": true,
     "ferramentas": {
-      "node": "25.0.0",
-      "npm": "11.6.2",
-      "npx": "11.6.2",
-      "git": "2.55.0.windows.2",
-      "vscode": "1.127.0"
+      "node": "26.5.0",
+      "npm": "11.17.0",
+      "npx": "11.17.0",
+      "git": "2.55.0.windows.3",
+      "vscode": "1.129.1",
+      "powershell": "7.6.4",
+      "windowsPowerShell": "5.1.22621.6133",
+      "python": "3.14.6",
+      "pipVenv": "26.1.2",
+      "pyyamlVenv": "6.0.3"
     },
     "observacoes": [
-      "npm.ps1 e npx.ps1 foram bloqueados no diagnóstico; npm.cmd e npx.cmd responderam normalmente.",
-      "Nenhuma instalação ou reconfiguração foi realizada."
+      "PowerShell 7 foi instalado no perfil do usuário em AppData Local e adicionado ao PATH do usuário; não afeta outras máquinas nem outras contas.",
+      "A política RemoteSigned foi persistida no escopo CurrentUser.",
+      "As dependências Python de ferramentas ficam isoladas em .venv e são recriadas por setup\\install.cmd.",
+      "Os scripts .ps1 usam UTF-8 com BOM para manter compatibilidade com Windows PowerShell 5.1."
     ]
   },
-  "atualizadoEm": "2026-07-20"
+  "atualizadoEm": "2026-07-22"
 }

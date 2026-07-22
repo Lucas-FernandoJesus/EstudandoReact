@@ -47,7 +47,7 @@
       "agendamento": "proxima_sessao",
       "status": "pendente",
       "motivo": "Em 2026-07-21, construiu a função integradora corretamente, mas precisou de pistas para distinguir argumento e variável receptora; a variação seguinte ainda contém erro entre coleção e item.",
-      "atividade": "Concluir a função pagar e pedir que identifique sem pistas parâmetro, argumento, valor retornado e variável receptora."
+      "atividade": "Usar a Retomada autossuficiente de learning/modules/04-javascript/exercicios.md e pedir que identifique sem pistas parâmetro, argumento, valor retornado e variável receptora."
     },
     {
       "id": "revisao-arrays-length-indices-limites",
@@ -71,7 +71,7 @@
       "agendamento": "proxima_sessao_prioridade",
       "status": "pendente",
       "motivo": "Em 2026-07-21, confundiu repetidamente a coleção plural com o item singular em etapas/etapa, tempos/tempo e pedidos/pedido.",
-      "atividade": "Retomar a função pagar, rastrear o objeto guardado em pedido na primeira repetição e revisar as duas consultas de propriedade dentro do laço."
+      "atividade": "Usar a Retomada autossuficiente de learning/modules/04-javascript/exercicios.md, rastrear o objeto guardado em pedido na primeira repetição e revisar as duas consultas de propriedade dentro do laço."
     },
     {
       "id": "revisao-media-com-acumulador",

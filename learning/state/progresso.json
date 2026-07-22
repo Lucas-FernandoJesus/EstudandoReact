@@ -4,18 +4,18 @@
   "statusGeral": "em_andamento",
   "modulos": [
     { "id": "00-ambientacao", "status": "em_revisao_contextual", "dominio": 2 },
-    { "id": "01-fundamentos-web", "status": "bloqueado", "dominio": null },
-    { "id": "02-html", "status": "bloqueado", "dominio": null },
-    { "id": "03-css", "status": "bloqueado", "dominio": null },
+    { "id": "01-fundamentos-web", "status": "adiado_por_foco_em_javascript", "dominio": null },
+    { "id": "02-html", "status": "adiado_por_foco_em_javascript", "dominio": null },
+    { "id": "03-css", "status": "adiado_por_foco_em_javascript", "dominio": null },
     { "id": "04-javascript", "status": "em_andamento", "dominio": 2 },
-    { "id": "05-git-praticas", "status": "bloqueado", "dominio": null },
-    { "id": "06-typescript", "status": "bloqueado", "dominio": null },
-    { "id": "07-react", "status": "bloqueado", "dominio": null },
-    { "id": "08-tailwind", "status": "bloqueado", "dominio": null },
-    { "id": "09-node-apis", "status": "bloqueado", "dominio": null },
-    { "id": "10-dados-bancos", "status": "bloqueado", "dominio": null },
-    { "id": "11-seguranca-qualidade", "status": "bloqueado", "dominio": null },
-    { "id": "12-fullstack-entrega", "status": "bloqueado", "dominio": null }
+    { "id": "05-git-praticas", "status": "planejado", "dominio": null },
+    { "id": "06-typescript", "status": "planejado", "dominio": null },
+    { "id": "07-react", "status": "planejado", "dominio": null },
+    { "id": "08-tailwind", "status": "planejado", "dominio": null },
+    { "id": "09-node-apis", "status": "planejado", "dominio": null },
+    { "id": "10-dados-bancos", "status": "planejado", "dominio": null },
+    { "id": "11-seguranca-qualidade", "status": "planejado", "dominio": null },
+    { "id": "12-fullstack-entrega", "status": "planejado", "dominio": null }
   ],
   "habilidadesObservadas": [
     {
@@ -154,6 +154,6 @@
     "modulo": "04-javascript",
     "foco": "Repetição com for...of, contadores, acumuladores, objetos e funções com arrays de objetos",
     "resultado": "Consolidou for...of, condições, contadores, acumuladores e objetos em variações autônomas; integrou array de objetos com filtro e soma. A média e o fluxo verbal de funções foram concluídos com pistas. A distinção entre coleção plural e item singular ainda oscila dentro de laços.",
-    "proximaAtividade": "Retomar a função pagar: rastrear o primeiro objeto guardado em pedido, substituir as duas consultas feitas indevidamente em pedidos pelas consultas ao item atual, prever o retorno 100 e revisar parâmetro, argumento, retorno e variável receptora."
+    "proximaAtividade": "Abrir learning/modules/04-javascript/exercicios.md na seção Retomada autossuficiente; rastrear o primeiro objeto guardado em pedido, revisar as duas consultas de propriedade, prever o retorno 100 e explicar parâmetro, argumento, retorno e variável receptora."
   }
 }

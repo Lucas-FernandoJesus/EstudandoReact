@@ -1,6 +1,6 @@
 ---
 name: ensinar-programacao
-description: Ensinar programação de forma socrática, progressiva e prática, sem entregar soluções completas de exercícios. Usar ao explicar conceitos, preparar trilhas e exercícios, diagnosticar pré-requisitos, revisar tentativas do estudante, orientar depuração ou recomendar materiais sobre HTML, CSS, JavaScript, TypeScript, React, Tailwind, Node.js, APIs, bancos de dados, testes, segurança, frontend, backend e ferramentas relacionadas.
+description: Ensinar programação de forma socrática, progressiva e prática, sem entregar soluções completas de exercícios, mantendo contexto e progresso com baixo custo de leitura. Usar ao explicar conceitos, preparar trilhas e exercícios, retomar ou registrar sessões, diagnosticar pré-requisitos, revisar tentativas, orientar depuração, recomendar materiais ou auditar mensalmente a eficiência pedagógica dos agentes e skills do projeto.
 ---
 
 # Ensinar programação
@@ -10,8 +10,24 @@ description: Ensinar programação de forma socrática, progressiva e prática, 
 - Ler `references/metodologia.md` antes de conduzir uma aula, exercício ou revisão.
 - Ler `references/trilha-curricular.md` ao planejar sequência, pré-requisitos ou próximos passos.
 - Ler `references/politica-de-fontes.md` antes de pesquisar versões, documentação, vídeos ou recomendações externas.
-- Consultar `learning/state/perfil.json`, `progresso.json` e `revisoes.json` quando existirem.
+- Executar `scripts/resumir-contexto.ps1` para uma retomada; abrir os JSON completos somente quando a tarefa exigir a evidência detalhada.
 - Confirmar o objetivo da sessão e verificar apenas os pré-requisitos relevantes.
+
+## Rotear o contexto
+
+- **Retomar estudo:** executar o resumidor no modo `retomada`; consultar o log mais recente somente se o resumo não trouxer evidência suficiente.
+- **Planejar sequência:** executar o resumidor no modo `planejamento` e ler `references/trilha-curricular.md`.
+- **Revisar tentativa:** localizar a habilidade relacionada em `progresso.json` e as revisões com o mesmo identificador ou tema em `revisoes.json`; não carregar todo o histórico quando uma busca direcionada bastar.
+- **Consultar preferências ou ambiente:** ler `perfil.json` e delegar verificações atuais ao especialista adequado.
+- **Auditar ferramentas:** seguir `references/auditoria-mensal.md` e executar `scripts/auditar-eficiencia.ps1`.
+
+Usar no PowerShell:
+
+```powershell
+pwsh -NoLogo -NoProfile -File .agents\skills\ensinar-programacao\scripts\resumir-contexto.ps1 -Modo retomada
+```
+
+Se `pwsh` ou `.venv\Scripts\python.exe` não existirem, orientar a execução consciente de `setup\install.cmd` na raiz do projeto. Nunca acoplar o bootstrap automaticamente ao `git pull`.
 
 ## Conduzir o ensino
 
@@ -38,7 +54,18 @@ description: Ensinar programação de forma socrática, progressiva e prática, 
 - Pedir autorização explícita antes de criar, editar, mover ou excluir arquivos; instalar ferramentas; alterar configurações; iniciar Git; ou executar comandos que mudem o ambiente.
 - Descrever o escopo exato da mudança antes de pedir autorização.
 - Nunca modificar o código do estudante sem permissão específica, mesmo quando a correção parecer óbvia.
-- Após uma sessão, propor a atualização dos arquivos de progresso e aguardar autorização antes de gravá-la.
+- Aplicar a autorização permanente de salvamento somente a `learning/logs/YYYY-MM-DD.md`, `learning/state/progresso.json`, `learning/state/revisoes.json` e ao acréscimo cumulativo no histórico do `README.md`.
+- Fora desse escopo, pedir autorização normalmente. A auditoria mensal pode gravar apenas `learning/audits/YYYY-MM.md` e nunca aplicar melhorias opcionais que recomendar; correções objetivamente comprovadas seguem a exceção permanente de `AGENTS.md`.
+- Aplicar a exceção permanente de `AGENTS.md` para corrigir inconsistências comprovadas nos arquivos de ensino e suporte, usando o menor escopo, preservando o histórico e relatando a alteração e os testes.
+- Quando o usuário solicitar um teste, executar os comandos ou programas necessários sem pedir nova autorização; manter instalações, atualizações, ações destrutivas, publicação externa e expansão de conteúdo fora dessa exceção.
+
+## Encerrar e salvar a sessão
+
+1. Registrar no log diário o objetivo, a tentativa, as pistas usadas e a evidência observada.
+2. Atualizar domínio, última sessão e próxima atividade em `progresso.json`.
+3. Atualizar a fila e o histórico de revisões em `revisoes.json`.
+4. Acrescentar uma linha ao histórico do `README.md` somente quando houver evidência de conclusão de uma etapa.
+5. Preservar registros anteriores e informar resumidamente ao estudante o que foi salvo.
 
 ## Usar especialistas
 
