@@ -46,8 +46,8 @@
       "habilidade": "explicar-fluxo-de-uma-funcao",
       "agendamento": "proxima_sessao",
       "status": "pendente",
-      "motivo": "Em 2026-07-21, construiu a função integradora corretamente, mas precisou de pistas para distinguir argumento e variável receptora; a variação seguinte ainda contém erro entre coleção e item.",
-      "atividade": "Usar a Retomada autossuficiente de learning/modules/04-javascript/exercicios.md e pedir que identifique sem pistas parâmetro, argumento, valor retornado e variável receptora."
+      "motivo": "Em 2026-07-22, identificou return, valor retornado e variável receptora, mas precisou de pistas extensas e nomes diferentes para explicar que o valor guardado na variável usada como argumento é recebido pelo parâmetro.",
+      "atividade": "Apresentar uma função curta com nomes diferentes no parâmetro e na variável usada como argumento; pedir sem pistas o valor que entra, o valor que sai pelo return e a variável que recebe a saída."
     },
     {
       "id": "revisao-arrays-length-indices-limites",
@@ -70,8 +70,8 @@
       "habilidade": "distinguir-colecao-e-item-no-for-of",
       "agendamento": "proxima_sessao_prioridade",
       "status": "pendente",
-      "motivo": "Em 2026-07-21, confundiu repetidamente a coleção plural com o item singular em etapas/etapa, tempos/tempo e pedidos/pedido.",
-      "atividade": "Usar a Retomada autossuficiente de learning/modules/04-javascript/exercicios.md, rastrear o objeto guardado em pedido na primeira repetição e revisar as duas consultas de propriedade dentro do laço."
+      "motivo": "Em 2026-07-22, concluiu a distinção entre pedidos e pedido e rastreou os objetos, mas após pistas extensas e com recaídas; também precisou separar a responsabilidade do for...of da decisão do if.",
+      "atividade": "Em uma nova variação e sem pistas, pedir o valor guardado na variável da coleção, o item guardado na variável do for...of e o que for...of e if controlam; manter vocabulário fixo."
     },
     {
       "id": "revisao-media-com-acumulador",
@@ -250,6 +250,22 @@
       "resultado": "codigo_integrado_com_explicacao_guiada",
       "dominioAtribuido": 2,
       "evidencia": "Construiu função com parâmetro, acumulador local, return, chamada e variável receptora; corrigiu a terminologia após pistas e repetiu a confusão coleção/item na variação com pedidos."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "distinguir-colecao-item-e-rastrear-acumulador",
+      "resultado": "colecao_item_com_pistas_extensas_e_acumulador_autonomo",
+      "dominioAtribuido": 2,
+      "evidencia": "Corrigiu pedidos/pedido e os acessos às propriedades após decomposição extensa; depois rastreou autonomamente as repetições restantes, os totais 40 e 100 e o return 100."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "explicar-fluxo-de-uma-funcao",
+      "resultado": "acerto_com_pistas_extensas",
+      "dominioAtribuido": 2,
+      "evidencia": "Identificou parâmetro, argumento, return, valor retornado e variável receptora; precisou de uma versão com nomes diferentes para explicar que o argumento fornece à função o valor recebido pelo parâmetro."
     }
   ],
   "regra": "Agendar revisões de forma adaptativa após evidências de aprendizagem; aproximar após erro e ampliar após recuperação autônoma."

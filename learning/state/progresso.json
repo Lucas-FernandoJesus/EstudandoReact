@@ -86,12 +86,12 @@
     {
       "id": "distinguir-parametros-e-argumentos",
       "dominio": 2,
-      "evidencia": "Em 2026-07-21, identificou corretamente parâmetro e argumento na variação com pedidos, mas a classificação anterior da função de cursos ainda exigiu perguntas orientadoras; manter recuperação autônoma."
+      "evidencia": "Em 2026-07-22, identificou sintaticamente nome da função, parâmetro e argumento na função pagar; após pistas extensas e uma versão com nomes diferentes, explicou que o argumento pedidos guarda a coleção e que esse valor é recebido pelo parâmetro. Ainda precisa recuperar esse fluxo sem ajuda."
     },
     {
       "id": "explicar-fluxo-de-uma-funcao",
       "dominio": 2,
-      "evidencia": "Em 2026-07-21, construiu funções com acumulador local, return, chamada, armazenamento e exibição; corrigiu argumento e variável receptora após pistas e ainda precisa transferir o fluxo sem ajuda."
+      "evidencia": "Em 2026-07-22, identificou autonomamente return total, o valor retornado 100 e a variável receptora valorPago; o fluxo do valor guardado no argumento para o parâmetro exigiu pistas extensas e redução para nomes diferentes."
     },
     {
       "id": "criar-e-reconhecer-arrays",
@@ -121,7 +121,7 @@
     {
       "id": "usar-contador-e-acumulador-em-repeticao",
       "dominio": 3,
-      "evidencia": "Em 2026-07-21, contou valores que atendiam a uma condição, somou vendas e acumulou durações de objetos filtrados, mantendo a exibição do total fora do laço."
+      "evidencia": "Em 2026-07-21, contou valores que atendiam a uma condição e usou acumuladores em variações autônomas. Em 2026-07-22, depois de alinhar o acesso às propriedades, rastreou autonomamente as repetições restantes da função pagar, chegando aos totais 40 e 100 e prevendo o return 100."
     },
     {
       "id": "calcular-media-com-array",
@@ -141,19 +141,19 @@
     {
       "id": "integrar-funcao-com-array-de-objetos",
       "dominio": 2,
-      "evidencia": "Em 2026-07-21, criou função que recebe array de objetos, filtra, acumula e retorna; a primeira integração funcionou, mas a variação com pedidos ainda confundiu a coleção com o item atual."
+      "evidencia": "Em 2026-07-22, corrigiu a função pagar para consultar o item atual, rastreou o filtro e o acumulador e previu o retorno 100; a integração foi concluída com pistas extensas para coleção/item, acesso por nome e fluxo argumento-parâmetro."
     },
     {
       "id": "distinguir-colecao-e-item-no-for-of",
       "dominio": 2,
-      "evidencia": "Em 2026-07-21, corrigiu conflitos como etapas/etapa e tempos/tempo, mas repetiu a troca de pedidos por pedido ao consultar propriedades dentro do laço."
+      "evidencia": "Em 2026-07-22, chegou à distinção entre pedidos, variável que guarda a coleção, e pedido, variável que guarda o item atual, e escreveu os objetos das três repetições; houve recaídas e a aplicação exigiu pistas extensas."
     }
   ],
   "ultimaSessao": {
-    "data": "2026-07-21",
+    "data": "2026-07-22",
     "modulo": "04-javascript",
-    "foco": "Repetição com for...of, contadores, acumuladores, objetos e funções com arrays de objetos",
-    "resultado": "Consolidou for...of, condições, contadores, acumuladores e objetos em variações autônomas; integrou array de objetos com filtro e soma. A média e o fluxo verbal de funções foram concluídos com pistas. A distinção entre coleção plural e item singular ainda oscila dentro de laços.",
-    "proximaAtividade": "Abrir learning/modules/04-javascript/exercicios.md na seção Retomada autossuficiente; rastrear o primeiro objeto guardado em pedido, revisar as duas consultas de propriedade, prever o retorno 100 e explicar parâmetro, argumento, retorno e variável receptora."
+    "foco": "Retomada guiada de for...of, coleção/item, acesso a propriedades, acumulador e fluxo de função",
+    "resultado": "Corrigiu os acessos da função pagar, rastreou as três repetições e previu o retorno 100. O acumulador foi aplicado autonomamente nas repetições restantes; coleção/item, acesso por nome, responsabilidades de for...of e if e fluxo argumento-parâmetro permaneceram em nível 2 após pistas extensas. A terminologia do tutor foi padronizada depois de inconsistências que contribuíram para a confusão.",
+    "proximaAtividade": "Em uma nova variação com nomes diferentes e sem pistas, identificar o que a variável usada como argumento guarda e qual valor o parâmetro recebe; dizer o que a variável do for...of guarda e separar o que o for...of controla do que o if controla. Só depois rastrear uma repetição."
   }
 }

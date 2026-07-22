@@ -17,8 +17,8 @@ function pagar(pedidos) {
     let total = 0;
 
     for (const pedido of pedidos) {
-        if (pedidos.pago) {
-            total += pedidos.valor;
+        if (pedido.pago) {
+            total += pedido.valor;
         }
     }
 
@@ -31,7 +31,7 @@ console.log(valorPago);
 
 ### Primeira tentativa
 
-1. Na primeira repetição, qual objeto completo está guardado em `pedido`?
+1. Na primeira repetição, qual objeto completo está guardado em `pedido`? 
 2. As duas consultas de propriedade dentro do laço estão sendo feitas no conjunto inteiro ou no item atual?
 3. Faça somente os ajustes que considerar necessários.
 4. Antes de executar, preveja o valor retornado. A meta registrada para esta variação é `100`.

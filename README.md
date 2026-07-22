@@ -45,6 +45,7 @@ Este histórico é cumulativo. Cada nova etapa ou checkpoint realizado será reg
 | 2026-07-21 | Objetos com condição em `for...of` | Adicionou a propriedade booleana `disponivel`, filtrou os objetos com `if`, exibiu apenas os nomes disponíveis e previu corretamente `Acao` e `Aventura`. |
 | 2026-07-21 | Acumulador filtrado em array de objetos | Percorreu os cursos, somou apenas a duração dos disponíveis, previu corretamente o total `24` e explicou por que o curso indisponível não contribuiu. |
 | 2026-07-21 | Função integradora com array de objetos | Criou uma função que recebe cursos, filtra os disponíveis, acumula e retorna `24`; após pistas, distinguiu parâmetro, argumento, retorno e variável receptora. |
+| 2026-07-22 | Retomada guiada da função com array de pedidos | Após pistas extensas, corrigiu coleção/item e os acessos às propriedades; rastreou autonomamente as repetições restantes e chegou ao retorno `100`. O fluxo argumento-parâmetro permanece em revisão. |
 
 ## Metodologia de aprendizagem
 
