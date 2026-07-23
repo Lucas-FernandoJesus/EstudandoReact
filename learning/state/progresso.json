@@ -21,12 +21,12 @@
     {
       "id": "identificar-partes-de-um-caminho",
       "dominio": 2,
-      "evidencia": "Identificou arquivo, extensão e pasta direta no caminho apresentado; precisou de orientação para diferenciar caminho absoluto e relativo."
+      "evidencia": "Identificou arquivo, extensão e pasta direta no caminho apresentado. Em 2026-07-23, reconheceu como relativo o caminho do script e explicou que ele parte da pasta atual do terminal, após orientação para abandonar a ideia de raiz e de duas bases simultâneas."
     },
     {
       "id": "distinguir-efeitos-de-comandos",
       "dominio": 2,
-      "evidencia": "Com orientação, distinguiu saída no terminal de alteração no sistema de arquivos e comparou estados antes e depois."
+      "evidencia": "Com orientação, distinguiu saída no terminal de alteração no sistema de arquivos. Em 2026-07-23, abandonou a inferência de escrita baseada apenas em `-Modo planejamento`, procurou evidência na implementação e concluiu que o resumidor lê, processa e exibe sem gravar arquivos."
     },
     {
       "id": "explicar-papeis-das-ferramentas",
@@ -46,7 +46,7 @@
     {
       "id": "decompor-comando-powershell",
       "dominio": 2,
-      "evidencia": "Em revisão guiada, distinguiu comandos, parâmetros explícitos, valores, argumento posicional, diretório atual e caminho completo; corrigiu as confusões entre File e pasta, comando e parâmetro, e diretório atual e raiz após pistas graduais."
+      "evidencia": "Em revisões guiadas, distinguiu comandos, parâmetros, valores e caminhos. Em 2026-07-23, num comando real do projeto, identificou autonomamente `pwsh` e o script; após pistas graduais, separou opções do `pwsh` de parâmetros do script, caminho relativo de absoluto e leitura/exibição de gravação. Permanece no nível 2 por depender de orientação."
     },
     {
       "id": "distinguir-valor-guardado-de-valor-exibido",
@@ -150,10 +150,10 @@
     }
   ],
   "ultimaSessao": {
-    "data": "2026-07-22",
+    "data": "2026-07-23",
     "modulo": "04-javascript",
-    "foco": "Revisões espaçadas de fluxo de função, coleção/item, let/const, length/limites e média com array",
-    "resultado": "Concluiu cinco revisões no nível 3: fluxo argumento-parâmetro-retorno, coleção/item/propriedade no for...of, declaração/reatribuição/redeclaração, length/índices/limites e média com array. A revisão contextual de PowerShell foi apresentada, mas ficou sem tentativa e permanece pendente para a retomada.",
-    "proximaAtividade": "Retomar pelas seis perguntas de decomposição do comando real `pwsh -NoLogo -NoProfile -File .agents\\skills\\ensinar-programacao\\scripts\\resumir-contexto.ps1 -Modo planejamento -LimiteRevisoes 10`; identificar programa, opções, valores, arquivo, tipo de caminho, parâmetros do script e efeitos esperados antes de executar."
+    "foco": "Decomposição contextual de um comando PowerShell real e planejamento da próxima etapa de JavaScript",
+    "resultado": "Decompôs o comando real do resumidor com pistas graduais: identificou programa e arquivo, separou opções do `pwsh` de parâmetros do script, reconheceu o caminho relativo à pasta atual e verificou no código que o script lê, processa e exibe sem gravar. A habilidade permanece no nível 2 e volta apenas em contexto real; não há revisão isolada obrigatória antes de avançar.",
+    "proximaAtividade": "Iniciar conteúdo novo de escopo em JavaScript com um diagnóstico curto: prever quais variáveis podem ser acessadas dentro e fora de uma função e de um bloco, antes de apresentar a explicação."
   }
 }

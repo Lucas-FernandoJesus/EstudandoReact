@@ -6,8 +6,8 @@
       "habilidade": "decompor-comando-powershell",
       "agendamento": "em_contexto_real_de_projeto",
       "status": "pendente",
-      "motivo": "A revisão de 2026-07-11 foi concluída com pistas; falta confirmar aplicação autônoma.",
-      "atividade": "Verificar caminhos e efeitos de comandos somente quando forem necessários em um projeto real; não repetir exercícios isolados de PowerShell."
+      "motivo": "Em 2026-07-23, decompôs um comando real do projeto com pistas graduais; falta confirmar aplicação autônoma, mas a habilidade não bloqueia o avanço.",
+      "atividade": "Na próxima necessidade real, antecipar programa, opções, valores, base do caminho e efeitos antes de executar; não repetir exercícios isolados de PowerShell."
     },
     {
       "id": "revisao-autonoma-papeis-terminal-node-npm-package-json",
@@ -314,6 +314,14 @@
       "resultado": "acerto_autonomo_em_revisao_espacada",
       "dominioAtribuido": 3,
       "evidencia": "Para as notas 6, 8 e 10, previu sem pistas soma 24, quantidade 3 e média 8, explicando que a média é a soma dividida pela quantidade."
+    },
+    {
+      "data": "2026-07-23",
+      "tipo": "revisao_contextual",
+      "habilidade": "decompor-comando-powershell",
+      "resultado": "acerto_com_pistas_em_comando_real",
+      "dominioAtribuido": 2,
+      "evidencia": "Identificou autonomamente o programa e o script; com pistas graduais, separou opções do pwsh de parâmetros do script, reconheceu o caminho relativo à pasta atual e verificou no código que o resumidor lê, processa e exibe sem gravar."
     }
   ],
   "regra": "Agendar revisões de forma adaptativa após evidências de aprendizagem; aproximar após erro e ampliar após recuperação autônoma."
