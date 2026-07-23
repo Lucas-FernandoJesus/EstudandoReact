@@ -60,8 +60,8 @@
     },
     {
       "id": "distinguir-declaracao-e-reatribuicao",
-      "dominio": 2,
-      "evidencia": "Em 2026-07-21, classificou declarações e reatribuições com let e const, mas precisou de uma pista para reconhecer como erro a redeclaração de let no mesmo escopo."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-22, na segunda variação e sem pistas, classificou corretamente declarações com let e const, reatribuição válida de let, tentativa inválida de reatribuir const e redeclaração inválida de let no mesmo escopo."
     },
     {
       "id": "avaliar-comparacoes-booleanas",
@@ -90,8 +90,8 @@
     },
     {
       "id": "explicar-fluxo-de-uma-funcao",
-      "dominio": 2,
-      "evidencia": "Em 2026-07-22, identificou autonomamente return total, o valor retornado 100 e a variável receptora valorPago; o fluxo do valor guardado no argumento para o parâmetro exigiu pistas extensas e redução para nomes diferentes."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-22, após uma primeira correção guiada, transferiu autonomamente para a variação com encomendas: identificou encomendas como argumento, lista como parâmetro e resultado como variável receptora do valor retornado."
     },
     {
       "id": "criar-e-reconhecer-arrays",
@@ -105,8 +105,8 @@
     },
     {
       "id": "usar-length-ultimo-indice-e-limites",
-      "dominio": 2,
-      "evidencia": "Em 2026-07-21, usou length corretamente como quantidade e divisor da média; corrigiu com pergunta orientadora que length - 1 é o último índice válido e que acesso em length retorna undefined."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-22, sem pistas, identificou length 4, último índice 3, último item Belém e explicou que o acesso no índice igual a length retorna undefined por estar fora dos limites da coleção."
     },
     {
       "id": "usar-push-e-pop",
@@ -125,8 +125,8 @@
     },
     {
       "id": "calcular-media-com-array",
-      "dominio": 2,
-      "evidencia": "Em 2026-07-21, calculou média com acumulador e length, mas precisou corrigir a confusão entre tempos e tempo e rastrear os totais parciais até 180."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-22, sem executar e sem pistas, previu soma 24, quantidade 3 e média 8 para um novo array, explicando que a média resulta da soma dividida pela quantidade de notas."
     },
     {
       "id": "criar-acessar-e-alterar-objetos",
@@ -145,15 +145,15 @@
     },
     {
       "id": "distinguir-colecao-e-item-no-for-of",
-      "dominio": 2,
-      "evidencia": "Em 2026-07-22, chegou à distinção entre pedidos, variável que guarda a coleção, e pedido, variável que guarda o item atual, e escreveu os objetos das três repetições; houve recaídas e a aplicação exigiu pistas extensas."
+      "dominio": 3,
+      "evidencia": "Em 2026-07-22, na terceira variação e sem pistas, identificou o objeto completo `{ sala: \"Azul\", confirmada: true }` guardado por reserva e separou corretamente o valor `true` de reserva.confirmada."
     }
   ],
   "ultimaSessao": {
     "data": "2026-07-22",
     "modulo": "04-javascript",
-    "foco": "Retomada guiada de for...of, coleção/item, acesso a propriedades, acumulador e fluxo de função",
-    "resultado": "Corrigiu os acessos da função pagar, rastreou as três repetições e previu o retorno 100. O acumulador foi aplicado autonomamente nas repetições restantes; coleção/item, acesso por nome, responsabilidades de for...of e if e fluxo argumento-parâmetro permaneceram em nível 2 após pistas extensas. A terminologia do tutor foi padronizada depois de inconsistências que contribuíram para a confusão.",
-    "proximaAtividade": "Em uma nova variação com nomes diferentes e sem pistas, identificar o que a variável usada como argumento guarda e qual valor o parâmetro recebe; dizer o que a variável do for...of guarda e separar o que o for...of controla do que o if controla. Só depois rastrear uma repetição."
+    "foco": "Revisões espaçadas de fluxo de função, coleção/item, let/const, length/limites e média com array",
+    "resultado": "Concluiu cinco revisões no nível 3: fluxo argumento-parâmetro-retorno, coleção/item/propriedade no for...of, declaração/reatribuição/redeclaração, length/índices/limites e média com array. A revisão contextual de PowerShell foi apresentada, mas ficou sem tentativa e permanece pendente para a retomada.",
+    "proximaAtividade": "Retomar pelas seis perguntas de decomposição do comando real `pwsh -NoLogo -NoProfile -File .agents\\skills\\ensinar-programacao\\scripts\\resumir-contexto.ps1 -Modo planejamento -LimiteRevisoes 10`; identificar programa, opções, valores, arquivo, tipo de caminho, parâmetros do script e efeitos esperados antes de executar."
   }
 }

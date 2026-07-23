@@ -154,9 +154,12 @@ function Install-UserPowerShell7 {
 }
 
 function Set-ProjectExecutionPolicy {
+    param([Parameter(Mandatory = $true)][string]$PowerShell7)
+
     Write-Step 'Configurando a política de execução do usuário'
-    $configuredPolicy = Get-ExecutionPolicy -Scope CurrentUser
-    if ($configuredPolicy -notin @('RemoteSigned', 'AllSigned')) {
+
+    $windowsPowerShellPolicy = Get-ExecutionPolicy -Scope CurrentUser
+    if ($windowsPowerShellPolicy -notin @('RemoteSigned', 'AllSigned')) {
         try {
             Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force -ErrorAction Stop
         }
@@ -166,19 +169,59 @@ function Set-ProjectExecutionPolicy {
                 throw
             }
         }
-        $configuredPolicy = Get-ExecutionPolicy -Scope CurrentUser
+        $windowsPowerShellPolicy = Get-ExecutionPolicy -Scope CurrentUser
     }
 
-    if ($configuredPolicy -notin @('RemoteSigned', 'AllSigned')) {
-        throw "Não foi possível persistir RemoteSigned para CurrentUser. Valor observado: $configuredPolicy"
+    if ($windowsPowerShellPolicy -notin @('RemoteSigned', 'AllSigned')) {
+        throw "Não foi possível persistir RemoteSigned para CurrentUser no Windows PowerShell. Valor observado: $windowsPowerShellPolicy"
     }
 
-    $effectivePolicy = Get-ExecutionPolicy
-    if ($effectivePolicy -notin @('RemoteSigned', 'AllSigned', 'Bypass')) {
-        throw "Uma política de maior precedência impede scripts locais. Política efetiva: $effectivePolicy"
+    $getCurrentUserPolicyArguments = @(
+        '-NoLogo',
+        '-NoProfile',
+        '-ExecutionPolicy',
+        'Bypass',
+        '-Command',
+        'Get-ExecutionPolicy -Scope CurrentUser'
+    )
+    $powerShell7Policy = ([string](& $PowerShell7 @getCurrentUserPolicyArguments)).Trim()
+    if ($powerShell7Policy -notin @('RemoteSigned', 'AllSigned')) {
+        $setPowerShell7PolicyCommand = @'
+try {
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force -ErrorAction Stop
+}
+catch {
+    $configuredAfterError = Get-ExecutionPolicy -Scope CurrentUser
+    if ($configuredAfterError -notin @('RemoteSigned', 'AllSigned')) {
+        throw
+    }
+}
+'@
+        Invoke-Checked $PowerShell7 @(
+            '-NoLogo',
+            '-NoProfile',
+            '-ExecutionPolicy',
+            'Bypass',
+            '-Command',
+            $setPowerShell7PolicyCommand
+        )
+        $powerShell7Policy = ([string](& $PowerShell7 @getCurrentUserPolicyArguments)).Trim()
     }
 
-    Write-Host "Política persistida em CurrentUser: $configuredPolicy; efetiva neste processo: $effectivePolicy"
+    if ($powerShell7Policy -notin @('RemoteSigned', 'AllSigned')) {
+        throw "Não foi possível persistir RemoteSigned para CurrentUser no PowerShell 7. Valor observado: $powerShell7Policy"
+    }
+
+    $windowsPowerShellEffectivePolicy = Get-ExecutionPolicy
+    $powerShell7EffectivePolicy = ([string](& $PowerShell7 -NoLogo -NoProfile -ExecutionPolicy Bypass -Command 'Get-ExecutionPolicy')).Trim()
+    if ($windowsPowerShellEffectivePolicy -notin @('RemoteSigned', 'AllSigned', 'Bypass')) {
+        throw "Uma política de maior precedência impede scripts locais no Windows PowerShell. Política efetiva: $windowsPowerShellEffectivePolicy"
+    }
+    if ($powerShell7EffectivePolicy -notin @('RemoteSigned', 'AllSigned', 'Bypass')) {
+        throw "Uma política de maior precedência impede scripts locais no PowerShell 7. Política efetiva: $powerShell7EffectivePolicy"
+    }
+
+    Write-Host "Política persistida em CurrentUser: Windows PowerShell $windowsPowerShellPolicy; PowerShell 7 $powerShell7Policy. Efetivas neste processo: Windows PowerShell $windowsPowerShellEffectivePolicy; PowerShell 7 $powerShell7EffectivePolicy"
 }
 
 function Initialize-PythonTooling {
@@ -266,7 +309,7 @@ if (-not (($env:Path -split ';') -contains $powerShellDirectory)) {
 $powerShellVersion = & $powerShell7 -NoLogo -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
 Write-Host "PowerShell 7: $powerShellVersion ($powerShell7)"
 
-Set-ProjectExecutionPolicy
+Set-ProjectExecutionPolicy -PowerShell7 $powerShell7
 $venvPython = Initialize-PythonTooling -ProjectRoot $projectRoot
 Test-ProjectTooling -ProjectRoot $projectRoot -PowerShell7 $powerShell7 -VenvPython $venvPython
 

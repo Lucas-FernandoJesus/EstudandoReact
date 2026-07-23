@@ -36,26 +36,26 @@
     {
       "id": "revisao-autonoma-declaracao-reatribuicao",
       "habilidade": "distinguir-declaracao-e-reatribuicao",
-      "agendamento": "revisao_espacada_proxima_sessao",
-      "status": "pendente",
-      "motivo": "Em 2026-07-21, classificou declarações e reatribuições, mas precisou de pista para identificar a redeclaração de let no mesmo escopo.",
-      "atividade": "Apresentar uma variação curta com let e const e pedir, sem pistas, que identifique declarações, reatribuições e possíveis erros."
+      "agendamento": "concluida_em_2026-07-22",
+      "status": "concluida",
+      "motivo": "Na segunda variação, classificou sem pistas declarações, reatribuição válida, tentativa de reatribuir const e redeclaração de let no mesmo escopo.",
+      "atividade": "Nenhuma revisão imediata; retomar em uso natural de let e const."
     },
     {
       "id": "revisao-fluxo-funcao",
       "habilidade": "explicar-fluxo-de-uma-funcao",
-      "agendamento": "proxima_sessao",
-      "status": "pendente",
-      "motivo": "Em 2026-07-22, identificou return, valor retornado e variável receptora, mas precisou de pistas extensas e nomes diferentes para explicar que o valor guardado na variável usada como argumento é recebido pelo parâmetro.",
-      "atividade": "Apresentar uma função curta com nomes diferentes no parâmetro e na variável usada como argumento; pedir sem pistas o valor que entra, o valor que sai pelo return e a variável que recebe a saída."
+      "agendamento": "concluida_em_2026-07-22",
+      "status": "concluida",
+      "motivo": "Na variação com encomendas, identificou sem pistas a variável usada como argumento, o parâmetro e a variável receptora do retorno.",
+      "atividade": "Nenhuma revisão imediata; retomar o fluxo completo em futura integração de função com array de objetos."
     },
     {
       "id": "revisao-arrays-length-indices-limites",
       "habilidade": "usar-length-ultimo-indice-e-limites",
-      "agendamento": "revisao_espacada_futura",
-      "status": "pendente",
-      "motivo": "Na continuação de 2026-07-21, usou length como quantidade e corrigiu último índice e acesso fora do limite após uma pergunta orientadora; falta retenção espaçada.",
-      "atividade": "Em outro contexto, pedir sem pistas a quantidade, o último índice válido e o resultado do acesso no índice igual a length."
+      "agendamento": "concluida_em_2026-07-22",
+      "status": "concluida",
+      "motivo": "Em outro contexto e sem pistas, identificou quantidade, último índice, último item e explicou o acesso fora do limite.",
+      "atividade": "Nenhuma revisão imediata; retomar índices em uso natural de arrays."
     },
     {
       "id": "revisao-espacada-indices-push-pop",
@@ -68,18 +68,18 @@
     {
       "id": "revisao-colecao-item-for-of",
       "habilidade": "distinguir-colecao-e-item-no-for-of",
-      "agendamento": "proxima_sessao_prioridade",
-      "status": "pendente",
-      "motivo": "Em 2026-07-22, concluiu a distinção entre pedidos e pedido e rastreou os objetos, mas após pistas extensas e com recaídas; também precisou separar a responsabilidade do for...of da decisão do if.",
-      "atividade": "Em uma nova variação e sem pistas, pedir o valor guardado na variável da coleção, o item guardado na variável do for...of e o que for...of e if controlam; manter vocabulário fixo."
+      "agendamento": "concluida_em_2026-07-22",
+      "status": "concluida",
+      "motivo": "Na terceira variação, identificou sem pistas o objeto completo guardado pela variável do for...of e o valor separado de uma propriedade desse objeto.",
+      "atividade": "Nenhuma revisão imediata; retomar em outro contexto com array de objetos para verificar retenção espaçada."
     },
     {
       "id": "revisao-media-com-acumulador",
       "habilidade": "calcular-media-com-array",
-      "agendamento": "revisao_espacada_futura",
-      "status": "pendente",
-      "motivo": "Concluiu média com acumulador e length, mas precisou corrigir a variável somada e rastrear os totais parciais.",
-      "atividade": "Calcular autonomamente a média de um novo array, prevendo soma, quantidade e resultado antes de executar."
+      "agendamento": "concluida_em_2026-07-22",
+      "status": "concluida",
+      "motivo": "Para um novo array, previu autonomamente soma, quantidade e média e explicou a divisão antes de executar.",
+      "atividade": "Nenhuma revisão imediata; retomar média em aplicação natural com dados reais."
     }
   ],
   "historico": [
@@ -266,6 +266,54 @@
       "resultado": "acerto_com_pistas_extensas",
       "dominioAtribuido": 2,
       "evidencia": "Identificou parâmetro, argumento, return, valor retornado e variável receptora; precisou de uma versão com nomes diferentes para explicar que o argumento fornece à função o valor recebido pelo parâmetro."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "explicar-fluxo-de-uma-funcao",
+      "resultado": "acerto_autonomo_em_nova_variacao",
+      "dominioAtribuido": 3,
+      "evidencia": "Na variação com encomendas, identificou sem pistas encomendas como argumento, lista como parâmetro e resultado como variável receptora do retorno."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "distinguir-colecao-e-item-no-for-of",
+      "resultado": "item_e_propriedade_distinguidos_apos_pergunta",
+      "dominioAtribuido": 2,
+      "evidencia": "Na tentativa autônoma respondeu encomenda.enviada para o valor de encomenda; após uma pergunta orientadora escreveu o objeto completo e explicou que encomenda é o item e encomenda.enviada acessa uma propriedade."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "distinguir-colecao-e-item-no-for-of",
+      "resultado": "acerto_autonomo_em_terceira_variacao",
+      "dominioAtribuido": 3,
+      "evidencia": "Sem pistas, identificou `{ sala: \"Azul\", confirmada: true }` como item completo da primeira repetição e `true` como valor separado de reserva.confirmada."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "distinguir-declaracao-e-reatribuicao",
+      "resultado": "acerto_autonomo_em_segunda_variacao",
+      "dominioAtribuido": 3,
+      "evidencia": "Após corrigir com uma pergunta a omissão de uma reatribuição válida na primeira variação, classificou sem pistas todas as declarações, reatribuições e tentativas inválidas na variação com temperatura, unidade e alerta."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "usar-length-ultimo-indice-e-limites",
+      "resultado": "acerto_autonomo_em_revisao_espacada",
+      "dominioAtribuido": 3,
+      "evidencia": "Para quatro cidades, respondeu sem pistas length 4, último índice 3, último item Belém e undefined no acesso em length, justificando o limite da coleção."
+    },
+    {
+      "data": "2026-07-22",
+      "tipo": "revisao",
+      "habilidade": "calcular-media-com-array",
+      "resultado": "acerto_autonomo_em_revisao_espacada",
+      "dominioAtribuido": 3,
+      "evidencia": "Para as notas 6, 8 e 10, previu sem pistas soma 24, quantidade 3 e média 8, explicando que a média é a soma dividida pela quantidade."
     }
   ],
   "regra": "Agendar revisões de forma adaptativa após evidências de aprendizagem; aproximar após erro e ampliar após recuperação autônoma."
